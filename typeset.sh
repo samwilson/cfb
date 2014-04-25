@@ -7,3 +7,4 @@ pdflatex main
 #ps2pdf Main.ps
 #rm *.dvi *.log *.aux *.toc
 
+cp main.pdf ../cfb-pages/book.pdf
