@@ -1,4 +1,4 @@
 The C. F. Barker Archives
 =========================
 
-For more infomration, see http://samwilson.github.io/cfb/
+For more information see http://samwilson.github.io/cfb/
