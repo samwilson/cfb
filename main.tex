@@ -1,18 +1,48 @@
-\documentclass[a4paper,twocolumn,twosided]{article}
-\usepackage{url, graphicx}
+\documentclass[a4paper]{book}
+\usepackage{url, graphicx, wrapfig, hyperref, ifthen, natbib}
+\usepackage[numbib]{tocbibind}
 \setcounter{secnumdepth}{0}
 \title{The C. F. Barker Archives}
-\author{\url{samwilson.github.io/cfb}}
+\author{\url{http://samwilson.github.io/cfb}}
+
+\hypersetup{
+  colorlinks = true,  % Colours links instead of ugly boxes
+  urlcolor   = blue,  % Colour for external hyperlinks
+  linkcolor  = black, % Colour of internal links
+  citecolor  = red    % Colour of citations
+}
+
+% ---- \biohead{Full Name}{LabelName}{Caption for photo.}
+% \biohead{}{}{}
+\newcommand{\biohead}[3]{%
+	\section{#1}\label{#2}%
+	\ifthenelse { \equal {#3} {} }%
+	{} % If #3 is empty, do nothing
+	{ % Otherwise, do the figure
+	%\begin{wrapfigure}{l}{0.25\textwidth}%
+		%\vspace{-24pt}%
+		\begin{figure}%
+			\centering
+			\includegraphics{photos/#2} \\
+			{\footnotesize #3}%
+			\label{fig:#2}
+		\end{figure}%
+		%\vspace{-24pt}%
+	%\end{wrapfigure}%
+	%\lettrine{ \includegraphics[width=0.20\linewidth]{photos/#2} \\
+	%{\footnotesize #3} }{#1}%
+	}%
+}
+
+% ---- \p{label} results in e.g. "p. 3"
+\newcommand{\p}[1]{p.\ \pageref{#1}}
+
+
 \begin{document}
 \maketitle
 \tableofcontents
 
-\newcommand{\biohead}[2]{
-  \begin{center}%
-  \includegraphics[width=0.8\linewidth]{photos/#1} \\
-  {\footnotesize #2}%
-  \end{center}%
-}
+\chapter{People}
 
 % Generation 1
 \input{biographies/Ralph_Munday_Denton-Barker}
@@ -70,7 +100,28 @@
 \input{biographies/Harry_Hancox}
 \input{biographies/Maria_Mary_Merrett}
 
-\bibliographystyle{plain}
+% Generation 4
+\input{biographies/Charles_Frederick_Barker}
+\input{biographies/Elizabeth_Hazelwood}
+\input{biographies/John_Moulsdale}
+\input{biographies/Maria_Jackson}
+\input{biographies/William_Munday}
+\input{biographies/Mary_Hill}
+\input{biographies/Napoleon_Aldridge}
+\input{biographies/Mary_Ann_Chymist}
+\input{biographies/Hugh_Croskery}
+\input{biographies/Charlotte_Wallace_Brown}
+\input{biographies/Boyd_Gilmour}
+\input{biographies/Jean_Dunsmore}
+\input{biographies/Thomas_Elias_Hancox}
+\input{biographies/Frances_Heeley}
+\input{biographies/James_Merrett}
+\input{biographies/Elizabeth}
+
+%\chapter*{Bibliography}
+\bibliographystyle{unsrt}
+
+%\addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{bibliography}{} 
 
 \end{document}

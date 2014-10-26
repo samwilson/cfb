@@ -1,69 +1,163 @@
+@comment{x-kbibtex-personnameformatting=<%l><, %f>}
+
+http://www.chejunkie.com/bibtex-cheat-sheet/
+
+article
+
+An article from a journal or magazine.
+
+Required fields: author, title, journal, year
+
+Optional fields: volume, number, pages, month, note, key
+
+book
+
+A book with an explicit publisher.
+
+Required fields: author/editor, title, publisher, year
+
+Optional fields: volume/number, series, address, edition, month, note, key
+
+booklet
+
+A work that is printed and bound, but without a named publisher or sponsoring institution.
+
+Required fields: title
+
+Optional fields: author, howpublished, address, month, year, note, key
+
+inbook
+
+A part of a book, usually untitled. May be a chapter (or section or whatever) and/or a range of pages.
+
+Required fields: author/editor, title, chapter/pages, publisher, year
+
+Optional fields: volume/number, series, type, address, edition, month, note, key
+
+incollection
+
+A part of a book having its own title.
+
+Required fields: author, title, booktitle, publisher, year
+
+Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note, key
+
+manual
+
+Technical documentation.
+
+Required fields: title
+
+Optional fields: author, organization, address, edition, month, year, note, key
+
+misc
+
+For use when nothing else fits.
+
+Required fields: none
+
+Optional fields: author, title, howpublished, month, year, note, key
+
+techreport
+
+A report published by a school or other institution, usually numbered within a series.
+
+Required fields: author, title, institution, year
+
+Optional fields: type, number, address, month, note, key
+
+unpublished
+
+A document having an author and title, but not formally published.
+
+Required fields: author, title, note
+
+Optional fields: month, year, key
+
+@misc{ToxtethParkCemeteryInscriptions,
+	author = "Robert and Anderson, Rose",
+	howpublished = "\url{http://toxtethparkcemeteryinscriptions.co.uk}",
+	note = "{M 25 BARKER. (C.Q.163)}",
+	title = "{Toxteth Park Cemetery Inscriptions}"
+}
 
 % BMD Indexes
+
 @incollection{BMDIndex_RalphMundayDentonBarker_birth,
-publisher="{G}eneral {R}egister {O}ffice", title="Index to Births, Marriages, and Deaths",
-year="1916",
-volume="8A",
-pages="927",
-note="Births Sep 1916, Birkenhead district",
+	note = "Births Sep 1916, Birkenhead district",
+	pages = "927",
+	publisher = "{G}eneral {R}egister {O}ffice",
+	title = "{Index to Births, Marriages, and Deaths}",
+	volume = "8A",
+	year = "1916"
 }
+
 @incollection{BMDIndex_JoanNyriaHancox_birth,
-publisher="{G}eneral {R}egister {O}ffice", title="Index to Births, Marriages, and Deaths",
-year="1918",
-volume="8A",
-pages="582",
-note="Bebington district. Record name: Joan M [sic] Hancox.",
+	note = "Bebington district. Record name: Joan M [sic] Hancox.",
+	pages = "582",
+	publisher = "{G}eneral {R}egister {O}ffice",
+	title = "{Index to Births, Marriages, and Deaths}",
+	volume = "8A",
+	year = "1918"
 }
 
 % Probate
 
 @incollection{WestCroskeryProbate,
-title = "Index of {W}ills and {A}dministrations",
-chapter = "Record for Samuel Maxwell West Croskery",
-publisher = "National Probate Calendar for England and Wales",
-year = "1861--1941",
+	chapter = "Record for Samuel Maxwell West Croskery",
+	publisher = "National Probate Calendar for England and Wales",
+	title = "{Index of {W}ills and {A}dministrations}",
+	year = "1861--1941"
 }
 
 % Censuses
+
 @incollection{UKCensus1911_RG14_22074,
-title="1911 Census of England",
-note="Class: RG14; Piece: 22074.",
+	note = "Class: RG14; Piece: 22074.",
+	title = "{1911 Census of England}"
 }
 
-@incollection{UKParishRegisters,
-title="England, Cheshire Parish Registers, 1538-2000",
-Film no: 2104768, Folder no: 4019100, Image no: 814
+o: 2104768, Folder no: 4019100, Image no: 814
 }
 
-
-@book{MarriageCertRalphDentonBarkerJoanNyriaPowell,
-Title     = "Certificate of marriage of Ralph Denton-Barker and Joan Nyria Powell",
-Publisher = "General Register Office",
-Year      = "1947",
+@unpublished{MarriageCertRalphDentonBarkerJoanNyriaPowell,
+	publisher = "General Register Office",
+	title = "{Certificate of marriage of Ralph Denton-Barker and Joan Nyria Powell}",
+	year = "1947"
 }
 
-@misc{VirginiaDocs,
-author="Virginia Grebenik",
-title="Personal documents",
-note="Documents held by Peter Grebenik",
+@unpublished{VirginiaDocs,
+	author = "Grebenik, Virginia",
+	note = "Documents held by Peter Grebenik",
+	title = "{Personal documents}"
 }
 
 @misc{OralHistoryJDB2008,
-title="Oral history interview with {J}ulia {D}enton-{B}arker",
-year="2008",
+	title = "{Oral history interview with {J}ulia {D}enton-{B}arker}",
+	year = "2008"
+}
+
+@misc{FlickrRalph,
+	author = "Unknown",
+	howpublished = "\url{https://www.flickr.com/photos/freosam/13988198711}",
+	title = "{Group photo of teachers at {R}alph's school}",
+	year = "c. 1935"
 }
 
 @misc{FlickrNyria,
-title="Photograph of Nyria in Great Witley in the late 1950s",
-howpublished="\url{https://flic.kr/p/njVZw3}",
+	howpublished = "\url{https://flic.kr/p/njVZw3}",
+	title = "{Photograph of Nyria in Great Witley in the late 1950s}"
 }
 
-@misc{FlickrTeachers,
-title="Group photo of teachers at {R}alph's school",
-howpublished="\url{https://flic.kr/p/nhk4D7}",
+@misc{FlickrMarianGilmourCroskery,
+	author = "Unknown",
+	howpublished = "\url{https://www.flickr.com/photos/freosam/15608155092/}",
+	title = "{Portrait of Marian Gilmour Croskery}",
+	year = "c. 1904"
 }
 
 @misc{FlickrJohnHillTree,
-title="John {H}ill's family tree",
-howpublished="\url{https://flic.kr/p/nszZrK}"
+	howpublished = "\url{https://flic.kr/p/nszZrK}",
+	title = "{John {H}ill's family tree}"
 }
+
