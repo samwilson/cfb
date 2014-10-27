@@ -4,5 +4,6 @@
 *.bbl
 *.blg
 *.swp
+*.out
 main.pdf
 
