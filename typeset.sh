@@ -1,5 +1,6 @@
 pdflatex main
-bibtex main
+#bibtex main
+makeindex main
 pdflatex main
 pdflatex main
 

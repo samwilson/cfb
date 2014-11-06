@@ -1,6 +1,7 @@
 \documentclass[a4paper]{book}
-\usepackage{url, graphicx, wrapfig, hyperref, ifthen, natbib}
+\usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx}
 \usepackage[numbib]{tocbibind}
+\makeindex
 \setcounter{secnumdepth}{0}
 \title{The C. F. Barker Archives}
 \author{\url{http://samwilson.github.io/cfb}}
@@ -19,16 +20,14 @@
 	\ifthenelse { \equal {#3} {} }%
 	{} % If #3 is empty, do nothing
 	{ % Otherwise, do the figure
-	%\begin{wrapfigure}{l}{0.25\textwidth}%
-		%\vspace{-24pt}%
-		\begin{figure}%
-			\centering
-			\includegraphics{photos/#2} \\
-			{\footnotesize #3}%
-			\label{fig:#2}
-		\end{figure}%
-		%\vspace{-24pt}%
-	%\end{wrapfigure}%
+	\begin{wrapfigure}{l}{0.25\textwidth}%
+		\vspace{-12pt}%
+		\centering
+		\includegraphics[width=0.8\linewidth]{photos/#2} \\
+		{\footnotesize #3}%
+		\label{fig:#2}
+		\vspace{-12pt}%
+	\end{wrapfigure}%
 	%\lettrine{ \includegraphics[width=0.20\linewidth]{photos/#2} \\
 	%{\footnotesize #3} }{#1}%
 	}%
@@ -36,6 +35,26 @@
 
 % ---- \p{label} results in e.g. "p. 3"
 \newcommand{\p}[1]{p.\ \pageref{#1}}
+
+% ---- references environment, \reference command, and \citeref command
+\newcounter{saveenumi}
+\newenvironment{references}[0]
+{
+	\footnotesize \vspace{1em} \textbf{References:}
+	\begin{enumerate}[nosep]
+	\setcounter{enumi}{\value{saveenumi}}
+}
+{
+	\setcounter{saveenumi}{\value{enumi}}
+	\end{enumerate}
+}
+\newcommand{\reference}[2]{
+\item \label{#1} #2
+}
+\newcommand{\citeref}[1]{\textsuperscript{\ref{#1}}}
+
+% ---- \idx{}
+\newcommand{\idx}[1]{#1\index{#1}}
 
 
 \begin{document}
@@ -79,7 +98,7 @@
 \input{biographies/Margery_Munday}
 \input{biographies/Erskine_Watson}
 \input{biographies/Ralph_Munday}
-\input{biographies/Vera}
+\input{biographies/Vera_Maunder}
 \input{biographies/Jeanie_Elenora_Dunsmuir_Croskery}
 \input{biographies/Connal_MacConnal}
 \input{biographies/Marian_Gilmour_Croskery}
@@ -118,12 +137,5 @@
 \input{biographies/James_Merrett}
 \input{biographies/Elizabeth}
 
-%\chapter{Notes}
-%\theendnotes
-
-%\chapter*{Bibliography}
-%\bibliographystyle{unsrt}
-%\addcontentsline{toc}{chapter}{Bibliography}
-%\bibliography{bibliography}{} 
-
+\printindex
 \end{document}
