@@ -1118,6 +1118,20 @@
          transform="matrix(0.4,0,0,0.4,2.96,0.4)"
          inkscape:connector-curvature="0" />
     </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM-76"
+       style="overflow:visible">
+      <path
+         id="path4691-60"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1126,12 +1140,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.79820428"
-     inkscape:cx="744.09448"
-     inkscape:cy="526.18109"
+     inkscape:zoom="0.56441566"
+     inkscape:cx="635.51375"
+     inkscape:cy="565.85278"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
+     inkscape:current-layer="layer2"
+     showgrid="true"
      inkscape:window-width="1621"
      inkscape:window-height="1030"
      inkscape:window-x="56"
@@ -1190,7 +1204,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1258,7 +1272,7 @@
          id="tspan5209"
          x="1260.9729"
          y="17.715206"
-         style="font-size:8px">25 April 2014</tspan></text>
+         style="font-size:8px">6 November 2014</tspan></text>
   </g>
   <g
      inkscape:label="Text and lines"
@@ -1281,7 +1295,7 @@
          x="1261.4174"
          y="620.44751"
          id="tspan3362"
-         style="font-size:11px;line-height:100%">(1916-1990)</tspan></text>
+         style="font-size:9px;line-height:100%">(1916-1990)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
@@ -1297,7 +1311,7 @@
          x="1261.4174"
          y="645.25061"
          id="tspan3360"
-         style="font-size:11px;line-height:100%">(1918-2004)</tspan></text>
+         style="font-size:9px;line-height:100%">(1918-2004)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
@@ -1436,7 +1450,7 @@
          sodipodi:role="line"
          x="1261.4174"
          y="755.09314"
-         style="font-size:11px;line-height:100%"
+         style="font-size:9px;line-height:100%"
          id="tspan3378">(1911-1937)</tspan></text>
     <text
        xml:space="preserve"
@@ -2036,7 +2050,7 @@
          id="tspan3803">(1884-1974)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;font-stretch:normal;font-variant:normal"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
        x="1020.4725"
        y="644.88055"
        id="text3793"
@@ -2045,12 +2059,12 @@
          id="tspan3795"
          x="1020.4725"
          y="644.88055"
-         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Ralph Munday</tspan><tspan
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">Ralph Munday</tspan><tspan
          sodipodi:role="line"
          x="1020.4725"
          y="654.28577"
-         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="tspan3817">(1885-)</tspan></text>
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan3817">(1885-1962)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -2844,7 +2858,7 @@
        sodipodi:nodetypes="cccczcccczccc" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;font-stretch:normal;font-variant:normal"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
        x="1020.4725"
        y="666.14038"
        id="text6094"
@@ -2853,7 +2867,7 @@
          id="tspan6096"
          x="1020.4725"
          y="666.14038"
-         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Vera</tspan></text>
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">Vera Maunder</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -2964,29 +2978,6 @@
          y="1022.7897"
          id="tspan6242"
          style="font-size:9px;line-height:100%">(1919-1983)</tspan></text>
-    <g
-       transform="translate(-42.519634,244.4882)"
-       style="display:inline"
-       id="g6577-0">
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path7337-37-4"
-         d="m 1169.2913,407.47899 31.8898,0"
-         style="fill:none;stroke:#000000;stroke-width:0.96832388999999996px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM);marker-end:none;display:inline" />
-      <text
-         sodipodi:linespacing="100%"
-         id="text6252-0"
-         y="411.02228"
-         x="1204.7244"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:9px;font-style:italic;line-height:100%;writing-mode:lr-tb;-inkscape-font-specification:Sans Italic"
-           y="411.02228"
-           x="1204.7244"
-           id="tspan6254-2"
-           sodipodi:role="line">No issue</tspan></text>
-    </g>
     <g
        transform="translate(-42.519634,315.35435)"
        style="display:inline"
@@ -3103,5 +3094,30 @@
        id="path3699-3-9-5-3-0-4-4-5-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       x="1261.4174"
+       y="690.94354"
+       id="text6064-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="1261.4174"
+         y="690.94354"
+         style="font-size:11px;line-height:100%"
+         id="tspan6068-4">Julia</tspan><tspan
+         sodipodi:role="line"
+         x="1261.4174"
+         y="700.34875"
+         style="font-size:9px;line-height:100%"
+         id="tspan3508">(<tspan
+   style="font-size:9px;font-style:italic"
+   id="tspan3511">Living</tspan>)</tspan></text>
+    <path
+       id="path3677-14-7"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;display:inline;marker-end:url(#DotM-76)"
+       d="m 1257.874,687.40025 -14.1732,0 c 0,0 3.5433,-7.08661 -7.0866,-7.08661 -10.6299,0 -7.9724,7.08661 -7.9724,7.08661 l -9.7441,0 -10e-5,-35.43308 -95.6693,0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cczcccc" />
   </g>
 </svg>
