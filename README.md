@@ -6,21 +6,14 @@ For more information see http://samwilson.github.io/cfb/
 Current status of our ShareLatex build:
 [![Build status badge](https://www.sharelatex.com/github/repos/samwilson/cfb/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/samwilson/cfb)
 
-## LaTeX cheatsheet
+The latest build can be downloaded from
+https://www.sharelatex.com/github/repos/samwilson/cfb/builds/latest/output.pdf
+
+## LaTeX shortcuts
 
 Biography headers:
 
 	\biohead{Full Name}{LABEL}{Photo caption, if applicable.}
-
-Reference lists:
-
-	\begin{references}
-	\reference{LABEL}{Citation text.}
-	\end{references}
-
-Cite the above with:
-
-	\citeref{LABEL}
 
 Index entries (plain):
 

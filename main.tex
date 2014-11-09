@@ -1,6 +1,7 @@
 \documentclass[a4paper]{book}
-\usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx}
-\usepackage[numbib]{tocbibind}
+\usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx, microtype}
+\usepackage[numbib, numindex]{tocbibind}
+\usepackage[superscript]{cite}
 \makeindex
 \setcounter{secnumdepth}{0}
 \title{The C. F. Barker Archives}
@@ -10,7 +11,7 @@
   colorlinks = true,  % Colours links instead of ugly boxes
   urlcolor   = blue,  % Colour for external hyperlinks
   linkcolor  = black, % Colour of internal links
-  citecolor  = red    % Colour of citations
+  citecolor  = black  % Colour of citations
 }
 
 % ---- \biohead{Full Name}{LabelName}{Caption for photo.}
@@ -35,23 +36,6 @@
 
 % ---- \p{label} results in e.g. "p. 3"
 \newcommand{\p}[1]{p.\ \pageref{#1}}
-
-% ---- references environment, \reference command, and \citeref command
-\newcounter{saveenumi}
-\newenvironment{references}[0]
-{
-	\footnotesize \vspace{1em} \textbf{References:}
-	\begin{enumerate}[nosep]
-	\setcounter{enumi}{\value{saveenumi}}
-}
-{
-	\setcounter{saveenumi}{\value{enumi}}
-	\end{enumerate}
-}
-\newcommand{\reference}[2]{
-\item \label{#1} #2
-}
-\newcommand{\citeref}[1]{\textsuperscript{\ref{#1}}}
 
 % ---- \idx{}
 \newcommand{\idx}[1]{#1\index{#1}}
@@ -137,5 +121,6 @@
 \input{biographies/James_Merrett}
 \input{biographies/Elizabeth}
 
+\input{bibliography}
 \printindex
 \end{document}
