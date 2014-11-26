@@ -1,5 +1,6 @@
 \documentclass[a4paper]{book}
 \usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx, microtype}
+\usepackage{currfile}
 \usepackage[numbib, numindex]{tocbibind}
 \usepackage[superscript]{cite}
 \makeindex
@@ -17,23 +18,21 @@
   citecolor  = black  % Colour of citations
 }
 
-% ---- \biohead{Full Name}{LabelName}{Caption for photo.}
-% \biohead{}{}{}
-\newcommand{\biohead}[3]{%
-	\section{#1}\label{#2}%
-	\ifthenelse { \equal {#3} {} }%
-	{} % If #3 is empty, do nothing
+% ---- \biohead{Full Name}{Caption for photo.}
+% \biohead{}{}
+\newcommand{\biohead}[2]{%
+	\section{#1}\label{\currfilebase}%
+	\ifthenelse { \equal {#2} {} }%
+	{} % If #2 is empty, do nothing
 	{ % Otherwise, do the figure
 	\begin{wrapfigure}{l}{0.25\textwidth}%
 		\vspace{-12pt}%
 		\centering
-		\includegraphics[width=0.8\linewidth]{photos/#2} \\
-		{\footnotesize #3}%
-		\label{fig:#2}
+		\includegraphics[width=0.8\linewidth]{photos/\currfilebase} \\
+		{\footnotesize #2}%
+		\label{fig:\currfilebase}
 		\vspace{-12pt}%
 	\end{wrapfigure}%
-	%\lettrine{ \includegraphics[width=0.20\linewidth]{photos/#2} \\
-	%{\footnotesize #3} }{#1}%
 	}%
 }
 
