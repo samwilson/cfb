@@ -13,11 +13,11 @@ https://www.sharelatex.com/github/repos/samwilson/cfb/builds/latest/output.pdf
 
 Biography headers:
 
-	\biohead{Full Name}{LABEL}{Photo caption, if applicable.}
+	\biohead{Full Name}{Photo caption; if non-empty a portrait will be displayed.}
 
-Index entries (plain):
+Index entries (plain; for more complicated ones do the usual things):
 
-	\idx{text to display and index}
+	\idx{text to both display and index}
 
 Page references:
 
