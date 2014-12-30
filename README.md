@@ -22,3 +22,9 @@ Index entries (plain; for more complicated ones do the usual things):
 Page references:
 
 	\p{LABEL} outputs e.g. "p. 3"
+
+## Tree (SVG) conventions
+
+Names in 11pt, dates 9pt; all `serif`.
+
+Indent continued-line names with three spaces.
