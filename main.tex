@@ -21,7 +21,7 @@
 % ---- \biohead{Full Name}{Caption for photo.}
 % \biohead{}{}
 \newcommand{\biohead}[2]{%
-	\section{#1}\label{\currfilebase}%
+	\section{\idx{#1}}\label{\currfilebase}%
 	\ifthenelse { \equal {#2} {} }%
 	{} % If #2 is empty, do nothing
 	{ % Otherwise, do the figure

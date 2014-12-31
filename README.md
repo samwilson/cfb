@@ -9,6 +9,12 @@ Current status of our ShareLatex build:
 The latest build can be downloaded from
 https://www.sharelatex.com/github/repos/samwilson/cfb/builds/latest/output.pdf
 
+## Style guide
+
+People's names should be followed by parentheses containing either
+1. a page reference (if the person is in the book); or
+2. the person's birth and death dates (if they're not).
+
 ## LaTeX shortcuts
 
 Biography headers:
