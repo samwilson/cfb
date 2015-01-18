@@ -1,6 +1,6 @@
 \documentclass[a4paper]{book}
 \usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx, microtype, booktabs, caption}
-\usepackage{currfile}
+\usepackage{currfile, multicol, float, fullpage}
 \usepackage[numbib, numindex]{tocbibind}
 \usepackage[superscript]{cite}
 \makeindex
@@ -10,6 +10,7 @@
 
 \usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
 \AtBeginEnvironment{quotation}{\smaller}% Step font down one size relative to current font.
+\patchcmd{\quotation}{\rightmargin}{\leftmargin 0px \rightmargin}{}{}
 
 \hypersetup{
   colorlinks = true,  % Colours links instead of ugly boxes
@@ -25,14 +26,19 @@
 	\ifthenelse { \equal {#2} {} }%
 	{} % If #2 is empty, do nothing
 	{ % Otherwise, do the figure
-	\begin{wrapfigure}{l}{0.25\textwidth}%
-		\vspace{-12pt}%
-		\centering
-		\includegraphics[width=0.8\linewidth]{photos/\currfilebase} \\
-		{\footnotesize #2}%
-		\label{fig:\currfilebase}
-		\vspace{-12pt}%
-	\end{wrapfigure}%
+		%\needspace{10\baselineskip}
+		%\begin{wrapfigure}{l}{0.25\textwidth}%
+		%\reversemarginpar
+		%\marginnote{
+		\begin{figure}[H]
+			%	\vspace{-12pt}%
+			\centering
+			\includegraphics[width=0.9\linewidth]{photos/\currfilebase} \\
+			{\footnotesize #2}%
+			\label{fig:\currfilebase}
+		%	\vspace{-12pt}%
+		\end{figure}%
+		%}
 	}%
 }
 
@@ -45,7 +51,7 @@
 
 \begin{document}
 \maketitle
-
+ 
 \thispagestyle{empty}
 \begin{center}\footnotesize
 This book is available online at \url{http://samwilson.github.io/cfb}.
@@ -66,6 +72,7 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \tableofcontents
 
 \chapter{People}
+\begin{multicols}{2}\raggedcolumns
 
 % Generation 1
 \input{biographies/John_Darcy_Barker}
@@ -152,6 +159,8 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \input{biographies/Frances_Heeley}
 \input{biographies/James_Merrett}
 \input{biographies/Elizabeth}
+
+\end{multicols}
 
 %\chapter{Data}
 %\input{census}
