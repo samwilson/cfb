@@ -1,6 +1,6 @@
 \documentclass[a4paper]{book}
 \usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx, microtype, booktabs, caption}
-\usepackage{currfile, multicol, float, fullpage}
+\usepackage{currfile, multicol, float, fullpage, subcaption}
 \usepackage[numbib, numindex]{tocbibind}
 \usepackage[superscript]{cite}
 \makeindex
@@ -10,7 +10,7 @@
 
 \usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
 \AtBeginEnvironment{quotation}{\smaller}% Step font down one size relative to current font.
-\patchcmd{\quotation}{\rightmargin}{\leftmargin 0px \rightmargin}{}{}
+\patchcmd{\quotation}{\rightmargin}{\leftmargin 2em \rightmargin}{}{}
 
 \hypersetup{
   colorlinks = true,  % Colours links instead of ugly boxes
@@ -33,7 +33,7 @@
 		\begin{figure}[H]
 			%	\vspace{-12pt}%
 			\centering
-			\includegraphics[width=0.9\linewidth]{photos/\currfilebase} \\
+			\includegraphics[width=0.45\linewidth]{photos/\currfilebase} \\
 			{\footnotesize #2}%
 			\label{fig:\currfilebase}
 		%	\vspace{-12pt}%
@@ -72,7 +72,8 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \tableofcontents
 
 \chapter{People}
-\begin{multicols}{2}\raggedcolumns
+%\begin{multicols}{2}
+\raggedcolumns
 
 % Generation 1
 \input{biographies/John_Darcy_Barker}
@@ -144,7 +145,7 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 
 % Generation 4
 \input{biographies/Charles_Frederick_Barker}
-\input{biographies/Elizabeth_Hazelwood}
+\input{biographies/Elizabeth_Hezelwood}
 \input{biographies/John_Moulsdale}
 \input{biographies/Maria_Jackson}
 \input{biographies/William_Munday}
@@ -202,7 +203,7 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \input{biographies/Hugh_Kirkland}
 \input{biographies/Marion_McGie}
 
-\end{multicols}
+%\end{multicols}
 
 %\chapter{Data}
 %\input{census}
