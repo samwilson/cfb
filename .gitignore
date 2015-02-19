@@ -8,3 +8,4 @@
 *.kate-swp
 main.pdf
 *.tex.backup
+.directory
