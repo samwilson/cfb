@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="tree.svg"
-   inkscape:export-filename="/home/sam/Life/Genealogy/CFB/cfb/cfb-pages/tree.png"
+   inkscape:export-filename="/home/sam/Life/Current/CFB/cfb-pages/tree.png"
    inkscape:export-xdpi="67.860001"
    inkscape:export-ydpi="67.860001">
   <defs
@@ -1804,6 +1804,20 @@
            sodipodi:ry="0.80000001" />
       </g>
     </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM-306"
+       style="overflow:visible">
+      <path
+         id="path4691-21"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1812,15 +1826,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.80211859"
-     inkscape:cx="745.9042"
-     inkscape:cy="526.64955"
+     inkscape:zoom="0.81245793"
+     inkscape:cx="744.09448"
+     inkscape:cy="526.18109"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1621"
+     inkscape:window-width="1591"
      inkscape:window-height="1030"
-     inkscape:window-x="56"
+     inkscape:window-x="86"
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
      objecttolerance="10000"
@@ -1992,7 +2006,7 @@
          id="tspan5209"
          x="1260.9729"
          y="17.715206"
-         style="font-size:8px">30 December 2014</tspan></text>
+         style="font-size:8px">11 May 2015</tspan></text>
   </g>
   <g
      inkscape:label="Text and lines"
@@ -2857,7 +2871,7 @@
     <path
        id="path5805"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
-       d="m 779.52751,694.48687 53.14973,0 -4e-5,14.17322 21.25981,0 m 0,63.77953 -21.25981,0 0,-63.77953"
+       d="m 779.52744,698.03017 53.14973,0 3e-5,10.62992 21.25981,0 m 0,63.77953 -21.25981,0 0,-63.77953"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
@@ -3613,7 +3627,7 @@
          style="font-size:11px;line-height:100%">Alice Margaret Renner</tspan><tspan
          sodipodi:role="line"
          x="857.48029"
-         y="1029.8762"
+         y="1029.8763"
          style="font-size:9px;line-height:100%"
          id="tspan6196">(1884-1977)</tspan></text>
     <text
@@ -4542,5 +4556,35 @@
          x="1098.4252"
          y="814.96063"
          id="tspan3521">Sylvia Crowther</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.96832389px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM);marker-end:none;display:inline"
+       d="m 779.52756,662.59711 24.80315,-1e-5"
+       id="path7337-37-4-1-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="807.87402"
+       y="666.14038"
+       id="text6252-0-7-0"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan6254-2-6-0"
+         x="807.87402"
+         y="666.14038"
+         style="font-size:9px;font-style:italic;line-height:100%;writing-mode:lr-tb;-inkscape-font-specification:Sans Italic">No issue</tspan></text>
+    <text
+       xml:space="preserve"
+       style="display:inline;font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace"
+       x="698.03149"
+       y="662.59711"
+       id="text3712"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3714"
+         x="698.03149"
+         y="662.59711"
+         style="font-size:11px;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Clara</tspan></text>
   </g>
 </svg>
