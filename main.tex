@@ -1,17 +1,30 @@
 \documentclass[a4paper]{book}
-\usepackage{url, graphicx, wrapfig, hyperref, ifthen, enumitem, makeidx, microtype, booktabs, caption}
+\usepackage{url, graphicx, wrapfig, ifthen, enumitem, makeidx, microtype, booktabs, caption}
 \usepackage{currfile, multicol, float, subcaption, textcomp}
 %\usepackage{fullpage}
+
+\usepackage[pagebackref=true]{hyperref}
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{\emph{%
+	\ifcase #1 Not cited.\todo{Not cited!}%
+	\or Cited on page~#2.%
+	\else Cited on pages #2.%
+	\fi%
+}}
+
 \usepackage[textsize=tiny]{todonotes}
 \usepackage[numbib, numindex]{tocbibind}
 \usepackage[superscript]{cite}
+
 \makeindex
 \setcounter{secnumdepth}{0}
+
 \title{The C. F. Barker Archives}
 \author{\url{http://samwilson.github.io/cfb}}
 
-\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
-\AtBeginEnvironment{quotation}{\smaller}% Step font down one size relative to current font.
+\usepackage{relsize, etoolbox} % http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{table}{\smaller} % Step font down one size relative to current font.
+\AtBeginEnvironment{quotation}{\smaller} % Step font down one size relative to current font.
 \patchcmd{\quotation}{\rightmargin}{\leftmargin 2em \rightmargin}{}{}
 
 \hypersetup{
@@ -45,7 +58,9 @@
 }
 
 % ---- \p{label} results in e.g. "p. 3"
-\newcommand{\p}[1]{ \textsc{p\pageref{#1}} }
+\newcommand{\p}[1]{\todo{Fix page ref.}\textsuperscript{\textsc{p\pageref{#1}}}}
+
+\newcommand{\bioref}[1]{\textsc{\nameref{#1}}}
 
 \newcommand{\f}[1]{Fig.~\ref{#1}}
 
@@ -205,6 +220,11 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \input{biographies/Barbara_May_Hancox}
 \input{biographies/Stanislaw_Karpinski}
 \input{biographies/Philip_Renner_Hancox}
+
+% Generation 0
+\input{biographies/Charles_Stanley_Hancox_Jr}
+\input{biographies/John_Michael_Hancox}
+\input{biographies/Anne}
 
 %\end{multicols}
 

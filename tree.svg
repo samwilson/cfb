@@ -2006,7 +2006,7 @@
          id="tspan5209"
          x="1260.9729"
          y="17.715206"
-         style="font-size:8px">11 May 2015</tspan></text>
+         style="font-size:8px">17 May 2015</tspan></text>
   </g>
   <g
      inkscape:label="Text and lines"
@@ -3023,11 +3023,11 @@
          id="tspan3278"
          x="375.59055"
          y="655.5105"
-         style="font-size:11px;line-height:100%">Alexander Browne</tspan><tspan
+         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Alexander Browne</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="664.91571"
-         style="font-size:9px;line-height:100%"
+         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan3280">(-1827)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#InfiniteLineEnd)"
@@ -3081,7 +3081,8 @@
          sodipodi:role="line"
          id="tspan4823"
          x="375.59055"
-         y="861.02234">Thomas Hancox</tspan></text>
+         y="861.02234"
+         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Thomas Hancox</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3092,7 +3093,8 @@
          sodipodi:role="line"
          id="tspan4827"
          x="375.59055"
-         y="875.19556">Sarah Jackson</tspan></text>
+         y="875.19556"
+         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Sarah Jackson</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 446.45669,864.5656 53.14961,0 0,21.25984 21.25984,0"
@@ -3109,7 +3111,8 @@
          sodipodi:role="line"
          id="tspan4823-5"
          x="375.59055"
-         y="570.47113">Mary Elizabeth Wallis</tspan></text>
+         y="570.47113"
+         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Mary Elizabeth Wallis</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3120,7 +3123,8 @@
          sodipodi:role="line"
          id="tspan4823-3"
          x="375.59055"
-         y="552.75458">Samuel Chymist</tspan></text>
+         y="552.75458"
+         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Samuel Chymist</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3131,12 +3135,13 @@
          sodipodi:role="line"
          x="375.59055"
          y="485.43176"
-         id="tspan4895">Leah North</tspan><tspan
+         id="tspan4895"
+         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Leah North</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="494.83698"
          id="tspan4901"
-         style="font-size:9px;line-height:100%">(c. 1768-1852)</tspan></text>
+         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(c. 1768-1852)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3147,12 +3152,13 @@
          sodipodi:role="line"
          id="tspan4889"
          x="375.59055"
-         y="464.17191">Edward Henry Aldridge</tspan><tspan
+         y="464.17191"
+         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Edward Henry Aldridge</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="473.57712"
          id="tspan4891"
-         style="font-size:9px;line-height:100%">(-1845)</tspan></text>
+         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(-1845)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 442.91339,471.25851 56.69291,0 -10e-6,28.34646 21.25985,0"
@@ -3216,12 +3222,12 @@
          id="tspan4997"
          x="375.59055"
          y="382.67587"
-         style="font-size:11px;line-height:100%">George Hill</tspan><tspan
+         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">George Hill</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="392.08109"
          id="tspan5001"
-         style="font-size:9px;line-height:100%">(c.1772-1832)</tspan></text>
+         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(c.1772-1832)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3233,12 +3239,12 @@
          id="tspan5007"
          x="375.59055"
          y="403.9357"
-         style="font-size:11px;line-height:100%">Hannah Dando</tspan><tspan
+         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Hannah Dando</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="413.34091"
          id="tspan5011"
-         style="font-size:9px;line-height:100%">(1784-1862)</tspan></text>
+         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(1784-1862)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 442.91339,389.76245 56.69291,0 0,-17.71654 21.25984,0"
@@ -3961,7 +3967,7 @@
          x="1314.5669"
          y="699.55133"
          id="tspan3529"
-         style="font-size:8px">(died age 21)</tspan></text>
+         style="font-size:8px">(died age 21, bef. 1980)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
@@ -3972,18 +3978,23 @@
          sodipodi:role="line"
          id="tspan3533"
          x="1314.5669"
-         y="726.37665">John Michael Hancox</tspan></text>
+         y="726.37665">John Michael Hancox</tspan><tspan
+         sodipodi:role="line"
+         x="1314.5669"
+         y="734.98444"
+         id="tspan3720"
+         style="font-size:8px">(died aged 58, bef. 1995)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
        x="1314.5669"
-       y="740.54987"
+       y="747.63647"
        id="text3535"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan3537"
          x="1314.5669"
-         y="740.54987">Anne</tspan></text>
+         y="747.63647">Anne</tspan></text>
     <path
        id="path3547"
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#DotM-76-4)"
