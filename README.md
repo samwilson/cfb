@@ -21,13 +21,13 @@ Biography headers:
 
 	\biohead{Full Name}{Photo caption; if non-empty a portrait will be displayed.}
 
+Biography references (to people's names):
+
+	\bioref{Person_File_Name}
+
 Index entries (plain; for more complicated ones do the usual things):
 
 	\idx{text to both display and index}
-
-Page references:
-
-	\p{LABEL} outputs e.g. "p. 3"
 
 ## Tree (SVG) conventions
 
