@@ -10,4 +10,4 @@ pdflatex main
 #ps2pdf Main.ps
 rm *.ind *.idx *.ilg *.ent *.log *.aux *.toc *.out *.bbl *.blg
 
-cp main.pdf ../cfb-pages/book.pdf
+cp main.pdf ../gh-pages/book.pdf
