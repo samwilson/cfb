@@ -25,7 +25,7 @@ Biography references (to people's names):
 
 	\bioref{Person_File_Name}
 
-Index entries (plain; for more complicated ones do the usual things):
+Index entries (plain; for more complicated ones do the usual, e.g. `\index{Surname, First}`):
 
 	\idx{text to both display and index}
 
