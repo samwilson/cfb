@@ -1826,9 +1826,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.81245793"
-     inkscape:cx="744.09448"
-     inkscape:cy="526.18109"
+     inkscape:zoom="0.82551111"
+     inkscape:cx="745.9042"
+     inkscape:cy="526.64955"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -1938,7 +1938,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3056,15 +3056,15 @@
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
-       x="375.59055"
-       y="942.51837"
+       x="376.0257"
+       y="945.99969"
        id="text3241-7-1-7-58-1-7"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         x="375.59055"
-         y="942.51837"
+         x="376.0257"
+         y="945.99969"
          id="tspan3247-8-7-1-5-0-9"
-         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Serif;-inkscape-font-specification:Serif">Mary</tspan></text>
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Serif;-inkscape-font-specification:Serif">Mary (Heeley)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 442.91339,935.43174 56.69291,0 0,-31.88976 21.25984,0"
@@ -4277,13 +4277,13 @@
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
        x="219.68504"
-       y="290.54987"
+       y="287.00653"
        id="text8047"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan8049"
          x="219.68504"
-         y="290.54987">Thomas Munday</tspan></text>
+         y="287.00653">Thomas Munday</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
@@ -4294,7 +4294,7 @@
          sodipodi:role="line"
          id="tspan8053"
          x="219.68504"
-         y="301.17978">Mary</tspan><tspan
+         y="301.17978">Mary (Munday)</tspan><tspan
          sodipodi:role="line"
          x="219.68504"
          y="310.58499"
@@ -4302,7 +4302,7 @@
          style="font-size:9px">(? - 1836)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM);display:inline"
-       d="m 283.46457,297.63647 67.32283,0 0,0 21.25984,0"
+       d="m 283.46457,290.54985 67.32283,0 0,7.08662 21.25984,0"
        id="path3699-3-9-5-3-0-4-4-5-8-1-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
@@ -4551,7 +4551,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#InfiniteLineEnd);display:inline"
-       d="m 372.04724,938.97505 -88.58267,0"
+       d="m 372.04724,942.51836 -88.58267,0"
        id="path7337-3-2-3-8-1-4-8-9-6-8-3-0-26-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
