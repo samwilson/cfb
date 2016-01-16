@@ -15,9 +15,11 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="tree.svg"
-   inkscape:export-filename="/home/sam/Life/Current/CFB/cfb-pages/tree.png"
+   inkscape:export-filename="/home/sam/code/cfb/gh-pages/tree.png"
    inkscape:export-xdpi="67.860001"
    inkscape:export-ydpi="67.860001">
+  <title
+     id="title3739">CFB Family Tree</title>
   <defs
      id="defs4">
     <marker
@@ -1826,11 +1828,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.82551111"
-     inkscape:cx="745.9042"
-     inkscape:cy="526.64955"
+     inkscape:zoom="0.81530866"
+     inkscape:cx="744.09448"
+     inkscape:cy="526.18109"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="true"
      inkscape:window-width="1591"
      inkscape:window-height="1030"
@@ -1938,8 +1940,24 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title>CFB Family Tree</dc:title>
+        <dc:source>http://samwilson.github.io/cfb</dc:source>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
@@ -2006,7 +2024,7 @@
          id="tspan5209"
          x="1260.9729"
          y="17.715206"
-         style="font-size:8px">17 May 2015</tspan></text>
+         style="font-size:8px">16 January 2016</tspan></text>
   </g>
   <g
      inkscape:label="Text and lines"
@@ -3023,11 +3041,11 @@
          id="tspan3278"
          x="375.59055"
          y="655.5105"
-         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Alexander Browne</tspan><tspan
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">Alexander Browne</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="664.91571"
-         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif"
          id="tspan3280">(-1827)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#InfiniteLineEnd)"
@@ -3082,7 +3100,7 @@
          id="tspan4823"
          x="375.59055"
          y="861.02234"
-         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Thomas Hancox</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Thomas Hancox</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3094,7 +3112,7 @@
          id="tspan4827"
          x="375.59055"
          y="875.19556"
-         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Sarah Jackson</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Sarah Jackson</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 446.45669,864.5656 53.14961,0 0,21.25984 21.25984,0"
@@ -3112,7 +3130,7 @@
          id="tspan4823-5"
          x="375.59055"
          y="570.47113"
-         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Mary Elizabeth Wallis</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Mary Elizabeth Wallis</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3124,7 +3142,7 @@
          id="tspan4823-3"
          x="375.59055"
          y="552.75458"
-         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Samuel Chymist</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Samuel Chymist</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3136,12 +3154,12 @@
          x="375.59055"
          y="485.43176"
          id="tspan4895"
-         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Leah North</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Leah North</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="494.83698"
          id="tspan4901"
-         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(c. 1768-1852)</tspan></text>
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">(c. 1768-1852)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3153,12 +3171,12 @@
          id="tspan4889"
          x="375.59055"
          y="464.17191"
-         style="-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Edward Henry Aldridge</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Edward Henry Aldridge</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="473.57712"
          id="tspan4891"
-         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(-1845)</tspan></text>
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">(-1845)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 442.91339,471.25851 56.69291,0 -10e-6,28.34646 21.25985,0"
@@ -3222,12 +3240,12 @@
          id="tspan4997"
          x="375.59055"
          y="382.67587"
-         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">George Hill</tspan><tspan
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">George Hill</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="392.08109"
          id="tspan5001"
-         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(c.1772-1832)</tspan></text>
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">(c.1772-1832)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -3239,12 +3257,12 @@
          id="tspan5007"
          x="375.59055"
          y="403.9357"
-         style="font-size:11px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Hannah Dando</tspan><tspan
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">Hannah Dando</tspan><tspan
          sodipodi:role="line"
          x="375.59055"
          y="413.34091"
          id="tspan5011"
-         style="font-size:9px;line-height:100%;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">(1784-1862)</tspan></text>
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif">(1784-1862)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
        d="m 442.91339,389.76245 56.69291,0 0,-17.71654 21.25984,0"
@@ -4587,7 +4605,7 @@
          style="font-size:9px;font-style:italic;line-height:100%;writing-mode:lr-tb;-inkscape-font-specification:Sans Italic">No issue</tspan></text>
     <text
        xml:space="preserve"
-       style="display:inline;font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Monospace;-inkscape-font-specification:Monospace"
        x="698.03149"
        y="662.59711"
        id="text3712"
@@ -4596,6 +4614,6 @@
          id="tspan3714"
          x="698.03149"
          y="662.59711"
-         style="font-size:11px;-inkscape-font-specification:Serif;font-family:Serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Clara</tspan></text>
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Clara</tspan></text>
   </g>
 </svg>
