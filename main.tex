@@ -1,7 +1,6 @@
 \documentclass[a4paper]{book}
-\usepackage{url, graphicx, wrapfig, ifthen, enumitem, makeidx, microtype, booktabs, caption}
+\usepackage{url, graphicx, wrapfig, ifthen, enumitem, imakeidx, microtype, booktabs, caption}
 \usepackage{currfile, multicol, float, subcaption, textcomp}
-%\usepackage{fullpage}
 
 \usepackage[pagebackref=true]{hyperref}
 \renewcommand*{\backref}[1]{}
@@ -16,7 +15,7 @@
 \usepackage[numbib, numindex]{tocbibind}
 \usepackage[superscript]{cite}
 
-\makeindex
+\makeindex[intoc]
 \setcounter{secnumdepth}{0}
 
 \title{The C. F. Barker Archives}
@@ -75,19 +74,19 @@ via the issue queue at \url{https://github.com/samwilson/cfb/issues}.
 
 \vspace{1cm}
 
-Copyright \copyright\ 2013--16 Julia Denton-Barker and Sam Wilson.
+Copyright \copyright\ 2016 Julia Denton-Barker and Sam Wilson.
 
-Some rights reserved.
+Some rights reserved (CC BY 2.5 AU).
 
 This book is licensed under the Creative Commons Attribution 2.5 Australia License.
-To view a copy of this license, visit \url{http://creativecommons.org/licenses/by/2.5/au/} or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, U.S.A.
+To view a copy of this license, visit \url{http://creativecommons.org/licenses/by/2.5/au/} or send a letter to Creative Commons, 171 Second Street, Suite 300, San~Francisco,~California,~94105,~U.S.A.
 \end{center}
 
 
 \tableofcontents
 
 \chapter{People}
-%\begin{multicols}{2}
+
 \raggedbottom
 
 % Generation 6
@@ -208,6 +207,7 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \input{biographies/Joan_Nyria_Hancox}
 \input{biographies/Geoffrey_George_Powell}
 \input{biographies/Eric_Geoffrey_West_Hancox}
+\input{biographies/Julia_Leat}
 \input{biographies/Charles_Stanley_Hancox}
 \input{biographies/Sylvia_Crowther}
 \input{biographies/Eric_Langdon}
@@ -224,11 +224,8 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \input{biographies/John_Michael_Hancox}
 \input{biographies/Anne}
 
-%\end{multicols}
-
-%\chapter{Data}
-%\input{census}
-
+% End matter
 \input{bibliography}
 \printindex
+
 \end{document}
