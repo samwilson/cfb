@@ -1828,20 +1828,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.0426244"
-     inkscape:cx="1329.8466"
-     inkscape:cy="920.4446"
+     inkscape:zoom="0.87457995"
+     inkscape:cx="745.9042"
+     inkscape:cy="526.64955"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
-     inkscape:window-width="1629"
-     inkscape:window-height="1026"
-     inkscape:window-x="51"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      objecttolerance="10000"
      guidetolerance="10000"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      units="cm">
     <inkscape:grid
@@ -2012,7 +2012,7 @@
          id="tspan5205"
          x="1349.9991"
          y="17.715206"
-         style="font-size:8px">http://samwilson.github.io/cfb/</tspan></text>
+         style="font-size:8px">https://samwilson.github.io/cfb/</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -2024,7 +2024,7 @@
          id="tspan5209"
          x="1260.9729"
          y="17.715206"
-         style="font-size:8px">9 April 2016</tspan></text>
+         style="font-size:8px">23 June 2017</tspan></text>
   </g>
   <g
      inkscape:label="Text and lines"
@@ -2487,7 +2487,7 @@
          sodipodi:role="line"
          id="tspan3243-8-6-6-6"
          x="524.40942"
-         y="1006.2979">Elizabeth</tspan><tspan
+         y="1006.2979">Elizabeth Coppin</tspan><tspan
          sodipodi:role="line"
          x="524.40942"
          y="1015.7031"
@@ -2615,7 +2615,7 @@
        sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#DotM)"
-       d="m 602.3622,999.21127 70.86615,3e-5 0,-70.86617 21.25984,0"
+       d="m 602.3622,992.63669 70.86615,3e-5 0,-64.29159 21.25984,0"
        id="path3703"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
