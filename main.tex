@@ -32,11 +32,11 @@
   citecolor  = black  % Colour of citations
 }
 
-% ---- \biohead{Full Name}{Caption for photo.}
-% \biohead{}{}
-\newcommand{\biohead}[2]{%
-	\section{\idx{#1}}\label{\currfilebase}%
-	\ifthenelse { \equal {#2} {} }%
+% ---- \biohead{Full Name}{Name, Full}{Caption for photo.}
+% \biohead{}{}{}
+\newcommand{\biohead}[3]{%
+	\section{#1}\label{\currfilebase}\index{#1|textbf}\index{#2|textbf}%
+	\ifthenelse { \equal {#3} {} }%
 	{} % If #2 is empty, do nothing
 	{ % Otherwise, do the figure
 		%\needspace{10\baselineskip}
@@ -47,7 +47,7 @@
 			%	\vspace{-12pt}%
 			\centering
 			\includegraphics[width=0.45\linewidth]{photos/\currfilebase} \\
-			{\footnotesize #2}%
+			{\footnotesize #3}%
 			\label{fig:\currfilebase}
 		%	\vspace{-12pt}%
 		\end{figure}%
@@ -55,13 +55,26 @@
 	}%
 }
 
-\newcommand{\bioref}[1]{\textsc{\nameref{#1}}}
+% ---- \bioref{biographies-file-name}
+% The tricky stuff here is explained at https://tex.stackexchange.com/a/357590
+\newcommand{\bioref}[1]{%
+	\expandafter\index{\getnamereftext{#1}}%
+	\textsc{\nameref{#1}}%
+}
+\makeatletter
+\newcommand{\getnamereftext}[1]{%
+	\@ifundefined{r@#1}{}{%
+		\unexpanded\expandafter\expandafter\expandafter{%
+			\expandafter\expandafter\expandafter\@thirdoffive\csname r@#1\endcsname
+		}%
+	}%
+}
 
+% ---- \f{fig-ref}
 \newcommand{\f}[1]{Fig.~\ref{#1}}
 
-% ---- \idx{}
+% ---- \idx{Index words}
 \newcommand{\idx}[1]{#1\index{#1}}
-
 
 \begin{document}
 \maketitle
@@ -82,8 +95,9 @@ This book is licensed under the Creative Commons Attribution 2.5 Australia Licen
 To view a copy of this license, visit \url{http://creativecommons.org/licenses/by/2.5/au/} or send a letter to Creative Commons, 171 Second Street, Suite 300, San~Francisco,~California,~94105,~U.S.A.
 \end{center}
 
-
 \tableofcontents
+
+\mainmatter
 
 \chapter{People}
 
