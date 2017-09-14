@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="tree.svg"
-   inkscape:export-filename="/home/sam/public_html/cfb/gh-pages/tree.png"
+   inkscape:export-filename="/home/sam/code/cfb/gh-pages/tree.png"
    inkscape:export-xdpi="67.860001"
    inkscape:export-ydpi="67.860001">
   <title
@@ -1883,15 +1883,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.86377106"
-     inkscape:cx="744.09448"
-     inkscape:cy="526.18109"
+     inkscape:zoom="0.8271848"
+     inkscape:cx="745.9042"
+     inkscape:cy="526.64955"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
-     inkscape:window-x="1985"
+     inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      objecttolerance="10000"
@@ -1905,7 +1905,8 @@
      inkscape:snap-center="false"
      inkscape:snap-grids="true"
      inkscape:snap-to-guides="true"
-     inkscape:object-nodes="true">
+     inkscape:object-nodes="true"
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid3619"
@@ -2029,32 +2030,30 @@
      style="display:inline"
      transform="translate(0,0.00130762)">
     <text
-       transform="translate(0,5.988066e-5)"
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="17.716536"
-       y="42.519604"
+       x="117.71654"
+       y="42.519665"
        id="text3974"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan3976"
-         x="17.716536"
-         y="42.519604">Family Tree</tspan></text>
+         x="117.71654"
+         y="42.519665">Family Tree</tspan></text>
     <text
-       transform="translate(0,5.988066e-5)"
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="17.716536"
-       y="67.897346"
+       x="117.71654"
+       y="67.897408"
        id="text3978"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan3980"
-         x="17.716536"
-         y="67.897346">Showing ancestors of Ralph and Nyria Denton-Barker,</tspan><tspan
+         x="117.71654"
+         y="67.897408">Showing ancestors of Ralph and Nyria Denton-Barker,</tspan><tspan
          sodipodi:role="line"
-         x="17.716536"
-         y="85.897346"
+         x="117.71654"
+         y="85.897408"
          id="tspan3982">and descendants of their grandparents.</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:1.99744725;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2078,51 +2077,44 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="1260.9729"
+       x="1254.9729"
        y="17.715206"
        id="text5207"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5209"
-         x="1260.9729"
+         x="1254.9729"
          y="17.715206"
-         style="font-size:8px">3 July 2017</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="375.59055"
-       y="1002.7546"
-       id="text4076"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="375.59055"
-         y="1002.7546"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Serif;-inkscape-font-specification:Serif"
-         id="tspan4080">William Coppin</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="375.59055"
-       y="956.69159"
-       id="text4076-2"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="375.59055"
-         y="956.69159"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Serif;-inkscape-font-specification:Serif"
-         id="tspan4080-9">William Merrett</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="375.59055"
-       y="1020.4711"
-       id="text4076-1"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="375.59055"
-         y="1020.4711"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Serif;-inkscape-font-specification:Serif"
-         id="tspan4080-2">Sarah Robinson</tspan></text>
+         style="font-size:8px">14 September 2017</tspan></text>
+    <g
+       transform="matrix(1.8860297,0,0,1.8860297,-506.52638,-709.62902)"
+       id="layer1-0"
+       inkscape:label="Layer 1">
+      <g
+         id="text4136"
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:40px;line-height:125%;font-family:Raleway;-inkscape-font-specification:'Raleway, Ultra-Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+        <path
+           id="path4141"
+           d="m 288.8178,399.74546 c 0,7 5.52,14.4 13.4,14.4 4,0 9.52,-2.44 11.04,-6.6 l -0.76,-0.2 c -1.28,3.4 -6.8,6 -10.28,6 -7,0 -12.6,-6.48 -12.6,-13.6 0,-6.68 4.64,-13.6 12.12,-13.6 4.4,0 7.92,1.64 10.08,5.64 l 0.76,-0.24 c -1.8,-3.6 -4.96,-6.2 -10.84,-6.2 -7.56,0 -12.92,7 -12.92,14.4 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="text4140"
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:40px;line-height:125%;font-family:Raleway;-inkscape-font-specification:'Raleway, Ultra-Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+        <path
+           id="path4144"
+           d="m 297.90138,419.53912 0,-14.16 15.32,0 0,-0.8 -15.32,0 0,-12.64 17.48,0 0,-0.8 -18.28,0 0,28.4 0.8,0 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="text4144"
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:40px;line-height:125%;font-family:Raleway;-inkscape-font-specification:'Raleway, Ultra-Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+        <path
+           id="path4147"
+           d="m 319.68523,414.49065 c 0,-3.24 -2.04,-6.24 -5.28,-7.2 2.48,-1.12 4.08,-3.72 4.08,-6.6 0,-3.56 -2.48,-7.24 -6.48,-7.24 l -12.56,0 0,28.4 13.16,0 c 3.88,0 6.92,-3.44 7.08,-7.36 z m -0.8,0 c 0,3.28 -2.76,6.56 -6.28,6.56 l -12.36,0 0,-13.12 12.64,0 c 3.44,0 6,3.16 6,6.56 z m -6.88,-20.24 c 3.36,0.08 5.68,3.04 5.68,6.44 0,3.16 -2.44,6.44 -5.92,6.44 l -11.52,0 0,-12.88 11.76,0 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
   </g>
   <g
      inkscape:label="Text and lines"
@@ -2357,16 +2349,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="698.03143"
+       x="698.03149"
        y="467.71521"
-       id="text3241-7-5"
-       sodipodi:linespacing="100%"><tspan
+       id="monogram"
+       sodipodi:linespacing="100%"
+       inkscape:label=""><tspan
          sodipodi:role="line"
          id="tspan3243-8-66"
-         x="698.03143"
+         x="698.03149"
          y="467.71521">Catherine Aldridge</tspan><tspan
          sodipodi:role="line"
-         x="698.03143"
+         x="698.03149"
          y="477.12042"
          id="tspan3247-8-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:100%;font-family:Serif;-inkscape-font-specification:Serif;text-align:start;writing-mode:lr-tb;text-anchor:start">(1847-1921)</tspan></text>
@@ -4712,5 +4705,41 @@
        id="path7337-3-2-3-8-9-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="375.59055"
+       y="1002.7546"
+       id="text4076"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="375.59055"
+         y="1002.7546"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan4080">William Coppin</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="375.59055"
+       y="956.69159"
+       id="text4076-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="375.59055"
+         y="956.69159"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan4080-9">William Merrett</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="375.59055"
+       y="1020.4711"
+       id="text4076-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="375.59055"
+         y="1020.4711"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan4080-2">Sarah Robinson</tspan></text>
   </g>
 </svg>
