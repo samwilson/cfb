@@ -18,7 +18,7 @@
 \makeindex[intoc]
 \setcounter{secnumdepth}{0}
 
-\title{The C. F. Barker Archives}
+\title{The C. F. Barker Archives \\ \vspace{1cm} \includegraphics[width=0.3\textwidth]{CFB_monogram} }
 \author{\url{http://samwilson.github.io/cfb}}
 
 \usepackage{relsize, etoolbox} % http://ctan.org/pkg/{relsize,etoolbox}
@@ -35,9 +35,14 @@
 % ---- \biohead{Full Name}{Name, Full}{Caption for photo.}
 % \biohead{}{}{}
 \newcommand{\biohead}[3]{%
-	\section{#1}\label{\currfilebase}\index{#1|textbf}\index{#2|textbf}%
+	\section{#1}%
+	\label{\currfilebase}%
+	\index{#1|textbf}%
+	% If there's a second index, use it.
+	\ifthenelse { \equal {#2} {} }{}{ \index{#2|textbf} }%
+	% If there's an image, show it.
 	\ifthenelse { \equal {#3} {} }%
-	{} % If #2 is empty, do nothing
+	{} % If #3 is empty, do nothing
 	{ % Otherwise, do the figure
 		%\needspace{10\baselineskip}
 		%\begin{wrapfigure}{l}{0.25\textwidth}%
@@ -77,6 +82,7 @@
 \newcommand{\idx}[1]{#1\index{#1}}
 
 \begin{document}
+
 \maketitle
  
 \thispagestyle{empty}
@@ -96,8 +102,6 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \end{center}
 
 \tableofcontents
-
-\mainmatter
 
 \chapter{People}
 
@@ -240,6 +244,26 @@ To view a copy of this license, visit \url{http://creativecommons.org/licenses/b
 \input{biographies/Charles_Stanley_Hancox_Jr}
 \input{biographies/John_Michael_Hancox}
 \input{biographies/Anne}
+
+\chapter{Appendix}
+
+% Text copied from appendix/main.tex
+The people in the following sections are comprised of the siblings of the main family members in our family tree.
+Within most families (although not all) I found out interesting details about some of these people, and it would be a pity not to include them.
+Obviously there are plenty of other members of the different branches who would deserve a section to themselves,
+but this is a sample of what I was able to uncover during my research.
+
+\hfill --- Julia, 2017.
+
+\input{appendix/Munday}
+\input{appendix/Gilmour}
+\input{appendix/Croskery}
+\input{appendix/Dunsmore}
+\input{appendix/Hancox}
+\input{appendix/Aldridge}
+\input{appendix/Barker}
+\input{appendix/Hazelwood}
+\input{appendix/Hill}
 
 % End matter
 \input{bibliography}

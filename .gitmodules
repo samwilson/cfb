@@ -1,0 +1,3 @@
+[submodule "appendix"]
+	path = appendix
+	url = https://github.com/juliad-b/www
