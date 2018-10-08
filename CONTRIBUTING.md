@@ -11,7 +11,7 @@ People's names should be followed by parentheses containing either
 
 Biography headers:
 
-	\biohead{Full Name}{Photo caption; if non-empty a portrait will be displayed.}
+	\biohead{Full Name}{Name, Full}{Photo caption; if non-empty a portrait will be displayed.}
 
 Biography references (to people's names):
 
