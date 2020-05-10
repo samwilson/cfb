@@ -38,4 +38,12 @@ markers:
   - label: C'an Amoros, Pollenca
     lat: 39.885876
     lon: 3.011335
+  - label: Sneaton, Yorkshire
+    lat: 54.458408
+    lon: -0.622578
+    tags: [ "Moses Hezelwood" ]
+  - label: Whitby, Yorkshire
+    lat: 54.486807
+    lon: -0.613749
+    tags: [ "Moses Hezelwood" ]
 ---
