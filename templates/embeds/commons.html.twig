@@ -1,0 +1,17 @@
+{% set commons = commons(embed.matches.1) %}
+
+<figure itemscope itemtype="http://schema.org/ImageObject" class="figure">
+    <a href="{{ commons.imageinfo.0.descriptionurl }}">
+        <img src="{{ commons.imageinfo.0.thumburl }}"
+             width="{{ commons.imageinfo.0.thumbwidth }}"
+             height="{{ commons.imageinfo.0.thumbheight }}"
+             itemprop="contentUrl"
+             alt="{{ commons.labels.en.value|escape('html_attr') }}"
+             class="figure-img img-fluid"
+        />
+    </a>
+    <figcaption itemprop="caption" class="figure-caption">
+        {{ commons.labels.en.value }}
+        (via <a href="{{ embed.url|escape('html_attr') }}">Wikimedia Commons</a>)
+    </figcaption>
+</figure>

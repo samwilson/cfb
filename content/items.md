@@ -1,0 +1,4 @@
+---
+template: items
+title: Items
+---

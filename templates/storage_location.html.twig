@@ -1,0 +1,24 @@
+{% extends '_base.html.twig' %}
+
+{% block main %}
+
+    <h2>
+        <a href="{{ page.link('/storage-locations') }}.html">Storage location:</a>
+        {{ page.metadata.title }}
+    </h2>
+    <p>
+        This page represents a storage location in the archives.
+        It is also available as <a href="{{ page.link(page.id) }}.pdf">a PDF</a>.
+    </p>
+
+    {% if page.metadata.description %}
+        {{ page.metadata.description|md2html|raw }}
+    {% endif %}
+
+    <ol>
+    {% for item in database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location', {storage_location: page.id}) %}
+        <li><a href="{{ page.link(item.id) }}.html">{{ item.title }}</a></li>
+    {% endfor %}
+    </ol>
+
+{% endblock %}

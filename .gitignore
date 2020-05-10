@@ -17,4 +17,6 @@ main.brf
 main.idx
 main.ilg
 main.ind
+cache/
+output/
 

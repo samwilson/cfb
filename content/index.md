@@ -1,0 +1,4 @@
+---
+title: Welcome
+template: home
+---

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ page.metadata.title }}
+        ::
+        {{ site.title }}
+    </title>
+    <link rel="stylesheet" href="{{ page.link('/assets/style.css') }}" />
+    <link rel="alternate" type="application/pdf" href="{{ page.link(page.id) }}.pdf" />
+    <link rel="alternate" type="application/pdf" href="{{ page.link(page.id) }}.json" />
+    <link rel="canonical" href="{{ site.config.url }}{{ page.id }}.html" />
+    {% block head %}{% endblock %}
+</head>
+<body class="{{ page.metadata.template }}-template">
+    <header>
+        <h1>
+            <a class="navbar-brand" href="{{page.link('/index')}}.html">{{site.title}}</a>
+        </h1>
+        <form action="https://duckduckgo.com/" method="get" id="search-form">
+            <input type="hidden" name="sites" value="{{ site.config.url }}" /><!-- This site only -->
+            <input type="hidden" name="kn" value="-1" /><!-- No new window -->
+            <input type="hidden" name="kp" value="-2" /><!-- No safe search -->
+            <label for="search">Search this site:</label>
+            <input type="search" id="search" name="q" placeholder="Search this site&hellip;" />
+            <input type="submit" value="Search" />
+        </form>
+    </header>
+    <main>
+        <article>
+            {% block main %}
+                <h2>{% if page.metadata.title is defined %}{{ page.metadata.title }}{% else %}Untitled{% endif %}</h2>
+                {{ page.body|md2html|raw }}
+            {% endblock %}
+        </article>
+        <aside>
+            <p class="logo">
+                <img src="{{ page.link('/assets/CFB_monogram.png') }}" alt="CFB logo" />
+            </p>
+            <nav>
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="{{page.link('/index')}}.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ page.link('assets/book.pdf') }}">Book (PDF)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ page.link('/map') }}.html">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ page.link('/tags') }}.html">Tags</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ page.link('/items') }}.html">Items</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ page.link('/storage-locations') }}.html">Storage locations</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <p>
+            &bull;
+            <a href="https://github.com/samwilson/cfb/edit/master/content{{ page.id }}{{ site.ext }}">Edit this page</a>
+            &bull;
+            <a href="https://github.com/samwilson/cfb/issues">Report an error</a>
+            &bull;
+        </p>
+    </footer>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends '_base.html.twig' %}
+
+{% block main %}
+
+    <h2>{{ page.metadata.title }}</h2>
+
+    {{ page.body|md2html|raw }}
+
+    {% if page.metadata.wikidata is defined %}
+        {% set wditem = wikidata( page.metadata.wikidata ) %}
+        <p>
+          <a href="https://www.wikidata.org/wiki/{{ wditem.id }}">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/20px-Wikidata-logo.svg.png"
+                   alt="Small Wikidata logo" />
+              {{ wditem.labels.en.value }} ({{ wditem.id }})
+          </a>:
+            {{ wditem.descriptions.en.value }}
+        </p>
+    {% endif %}
+
+    <ol>
+        {% for p in database.query('SELECT p.* FROM pages p, json_each(p.tags) j WHERE "/tags/"||j.value LIKE "'~page.id~'"') %}
+            <li><a href="{{ page.link(p.id) }}.html">{{ p.title }}</a></li>
+        {% endfor %}
+    </ol>
+
+{% endblock %}

@@ -1,0 +1,4 @@
+title: C.F. Barker Archives
+url: https://cfbarker.archives.org.au
+embeds:
+  commons: "|https://commons.wikimedia.org/wiki/File:(.*)|"

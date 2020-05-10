@@ -1,0 +1,18 @@
+{% macro date(datetime, precision) %}
+
+    {% if not instanceof(datetime,'\DateTime') %}
+        {% set datetime = date_create(datetime) %}
+    {% endif %}
+
+    <time datetime="{{ datetime.format('c') }}">
+        {% if precision == 'circa' %}
+            <abbr title="circa">c.</abbr>&nbsp;{{ datetime.format('Y') }}
+        {% elseif precision == 'year' %}
+            {{ datetime.format('Y') }}
+        {% elseif precision == 'month' %}
+            {{ datetime.format('Y F') }}
+        {% else %}
+            {{ datetime.format('Y F j l') }}
+        {% endif %}
+    </time>
+{% endmacro %}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Page Not Found</title>
+    <style>
+        body {
+            background: rgb(14, 30, 37);
+            color: white;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 22px;
+            line-height: 24px;
+        }
+        .main {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            max-width: 364px;
+            padding: 24px;
+            background: white;
+            color: rgb(14, 30, 37);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+        }
+        a {
+            margin: 0;
+            text-decoration: none;
+            font-weight: 600;
+            line-height: 24px;
+            color: #00ad9f;
+        }
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+            color: #007A70;
+        }
+        p:last-of-type {
+            margin: 0;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105794913-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-105794913-3');
+    </script>
+</head>
+<body>
+    <main class="main">
+        <div class="card">
+            <h1>404 Page Not Found</h1>
+            <p>The page you are looking for does not exist.</p>
+            <p>
+                <a id="back-link" href="{{page.link('/index')}}.html">
+                    Go to the homepage
+                </a>
+            </p>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Coat_of_arms_of_the_Hall_family.jpg/200px-Coat_of_arms_of_the_Hall_family.jpg"
+                     alt="Coat of arms of the Hall family."
+                     width="200"
+                     height="262"
+                />
+            </p>
+        </div>
+    </main>
+<script>
+</script>
+</body>
+</html>
+

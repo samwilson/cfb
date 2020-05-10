@@ -1,0 +1,4 @@
+---
+template: tags
+title: Tags
+---

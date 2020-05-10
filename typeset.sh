@@ -5,6 +5,6 @@ pdflatex main
 makeindex main
 pdflatex main
 
-mv main.pdf book.pdf
+mv main.pdf assets/book.pdf
 
 rm *.ind *.idx *.ilg *.log *.aux *.toc *.out *.bbl *.blg *.brf

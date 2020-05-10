@@ -21,6 +21,8 @@ Index entries (plain; for more complicated ones do the usual, e.g. `\index{Surna
 
 	\idx{text to both display and index}
 
+Full stops that are not sentence-ending should be marked e.g. `F.E.\@Wellows`
+
 ## Tree (SVG) conventions
 
 Names in 11pt, dates 9pt; all `serif`.
