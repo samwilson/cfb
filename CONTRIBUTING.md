@@ -28,3 +28,23 @@ Full stops that are not sentence-ending should be marked e.g. `F.E.\@Wellows`
 Names in 11pt, dates 9pt; all `serif`.
 
 Indent continued-line names with three spaces.
+
+## Item template
+
+```
+---
+template: item
+title: 
+images:
+  - commons: 
+    flickr: 
+    caption: 
+license: pd
+date: 
+date_precision: 
+storage_location: 
+tags:
+  - 
+description:
+---
+```

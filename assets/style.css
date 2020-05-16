@@ -76,3 +76,18 @@ body.item-template .image {
     float: left;
     margin: 0 1em 1em 0;
 }
+
+.item-template #images {
+    clear: both;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery figure {
+    width: 300px;
+    text-align: center;
+}
+.gallery figure img {
+    max-width: 100%;
+}

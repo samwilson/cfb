@@ -2,3 +2,6 @@ title: C.F. Barker Archives
 url: https://cfbarker.archives.org.au
 embeds:
   commons: "|https://commons.wikimedia.org/wiki/File:(.*)|"
+output_exclude:
+  - "|_redirects|"
+img_placeholder: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Noun_Project_unknown_icon_762411_cc.svg/480px-Noun_Project_unknown_icon_762411_cc.svg.png

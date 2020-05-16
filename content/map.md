@@ -46,4 +46,12 @@ markers:
     lat: 54.486807
     lon: -0.613749
     tags: [ "Moses Hezelwood" ]
+  - label: Riverside Cottage, Tasmania
+    lat: -41.446201
+    lon: 148.181027
+    tags: [ "Ralph Munday Denton-Barker", "Joan Nyria Denton-Barker (née Hancox)" ]
+  - label: Beechcroft, Cheddar, Somerset
+    lat: 51.283531
+    lon: -2.78275
+    tags: [ "John Hill Munday", "Brugess Fry" ]
 ---
