@@ -1,0 +1,23 @@
+{
+    "require": {
+        "samwilson/basildon": "^3.2"
+    },
+    "config": {
+        "process-timeout": 0
+    },
+    "scripts": {
+        "build-tree": [
+            "inkscape --export-type=png --export-filename=assets/tree.png tree.svg",
+            "inkscape --export-type=pdf --export-filename=assets/tree.pdf tree.svg"
+        ],
+        "build-site": "basildon build . -t 100000",
+        "build": [
+            "@build-tree",
+            "@build-site"
+        ],
+        "deploy": [
+            "@build",
+            "./node_modules/.bin/netlify deploy --prod -d output"
+        ]
+    }
+}
