@@ -21,3 +21,5 @@ main.ind
 cache/
 output/
 vendor/
+node_modules/
+.netlify/
