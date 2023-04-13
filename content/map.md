@@ -54,4 +54,8 @@ markers:
     lat: 51.283531
     lon: -2.78275
     tags: [ "John Hill Munday", "Brugess Fry" ]
+  - label: 10 Falkner Square, Liverpool
+    lat: 53.398719
+    lon: -2.963185
+    tags: [ "James Denton Barker", "Thomas Henry Barker" ]
 ---

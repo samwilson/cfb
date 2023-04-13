@@ -12,6 +12,7 @@ main.pdf
 cfb.kilepr
 book.pdf
 tree.pdf
+tree.png
 CFB_monogram.pdf
 main.brf
 main.idx
@@ -19,4 +20,4 @@ main.ilg
 main.ind
 cache/
 output/
-
+vendor/

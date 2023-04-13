@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: "Arial Narrow", "Arial", sans-serif;
+    font-family: sans-serif;
 }
 body > header {
     flex: 1;
@@ -90,4 +90,11 @@ body.item-template .image {
 }
 .gallery figure img {
     max-width: 100%;
+}
+
+.main-tree {
+}
+
+.main-tree img {
+    height: 60vh;
 }
