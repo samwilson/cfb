@@ -1,0 +1,4 @@
+---
+template: people
+title: People
+---

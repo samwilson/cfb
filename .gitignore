@@ -23,3 +23,4 @@ output/
 vendor/
 node_modules/
 .netlify/
+output/style.css

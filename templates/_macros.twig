@@ -16,3 +16,52 @@
         {% endif %}
     </time>
 {% endmacro %}
+
+{% macro image(image, link = true) %}
+    {% set img_src = '' %}
+    {% set img_href = '' %}
+
+    {% if image.commons is defined %}
+        {% set commons = commons(image.commons) %}
+        {% set img_src = commons.imageinfo.0.thumburl %}
+        {% set img_href = commons.imageinfo.0.descriptionurl %}
+
+    {% elseif image.flickr is defined %}
+        {% set flickr = flickr(image.flickr) %}
+        {% set img_src = flickr.urls.medium_image %}
+        {% set img_href = flickr.urls.photopage %}
+
+    {% elseif image.internetarchive is defined %}
+        {% set img_src = 'https://archive.org/download/' ~ image.internetarchive %}
+
+    {% endif %}
+
+    {% if link %}
+        <figure>
+            <a href="{{ img_href}}">
+                <img src="{{ img_src }}" itemprop="image" />
+            </a>
+            {% if image.caption is defined %}
+                <figcaption class="figure-caption text-center">{{image.caption}}</figcaption>
+            {% endif %}
+        </figure>
+    {% else %}
+        <img src="{{ img_src|escape('html_attr') }}" class="image" itemprop="image" />
+    {% endif %}
+
+{% endmacro %}
+
+{% macro wikitree_date(date, status) %}
+    {% set format = 'j F Y' %}
+    {% if date ends with '-00-00' %}
+        {% set format = 'Y' %}
+    {% elseif date ends with '-00' %}
+        {% set format = 'F Y' %}
+    {% endif %}
+    {% if date != '0000-00-00' %}
+        {% if status == 'guess' %}
+            <abbr title="circa">c.</abbr>
+        {% endif %}
+        {{ date|date(format) }}
+    {% endif %}
+{% endmacro %}

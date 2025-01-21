@@ -1,0 +1,76 @@
+{% extends '_base.html.twig' %}
+
+{% block main %}
+    {% import '_macros.twig' as macros %}
+
+    {% set people = database.query('select * from pages where template="person" order by date asc').fetchAll() %}
+
+    <h2>People</h2>
+    <p>
+        There are {{people|length|format_number}} people recoded here.
+        Each is also represented on WikiTree, and some are on Wikidata.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Birth date</th>
+                <th>Birth place</th>
+                <th>Death date</th>
+                <th>Death place</th>
+                <th>WikiTree</th>
+                <th>Wikidata</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for person in people %}
+
+            {% if person.wikidata %}
+                
+            {% endif %}
+
+            {% set wikitree_profile = false %}
+            {% if person.wikitree is defined and person.wikitree %}
+                {% set wikitree_profile = get_json('https://api.wikitree.com/api.php?action=getProfile&key=' ~ person.wikitree).0.profile %}
+            {% endif %}
+
+            <tr>
+                <td>
+                    <a href="{{ page.link(person.id) }}.html">{{ person.title }}</a>
+                </td>
+                <td>
+                    {% if wikitree_profile %}
+                        {{macros.wikitree_date(wikitree_profile.BirthDate, wikitree_profile.DataStatus.BirthDate)}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if wikitree_profile %}
+                        {{wikitree_profile.BirthLocation}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if wikitree_profile %}
+                        {{macros.wikitree_date(wikitree_profile.DeathDate, wikitree_profile.DataStatus.DeathDate)}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if wikitree_profile %}
+                        {{wikitree_profile.DeathLocation}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if wikitree_profile %}
+                        <a href="https://wikitree.com/wiki/{{wikitree_profile.Name}}">{{wikitree_profile.Name}}</a>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if person.wikidata %}
+                        <a href="https://www.wikidata.org/wiki/{{person.wikidata}}">{{person.wikidata}}</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

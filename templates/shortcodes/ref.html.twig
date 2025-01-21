@@ -1,0 +1,11 @@
+{% if page.metadata.references is defined %}
+    {%- set refs = page.metadata.references %}
+    {%- set ref = attribute(refs, shortcode.attrs.1) %}
+    {%- set refnum = 0 %}
+    {%- for k,v in refs %}
+        {%- set refnum = refnum + 1 %}
+        {%- if v == ref -%}
+            <sup>[{{refnum}}]</sup>
+        {% endif %}
+    {% endfor %}
+{% endif %}

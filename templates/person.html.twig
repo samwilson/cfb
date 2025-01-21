@@ -1,0 +1,212 @@
+{% extends '_base.html.twig' %}
+{% import '_macros.twig' as macros %}
+
+{% set PROP_IMAGE = 'P18' %}
+{% set PROP_DATE_OF_BIRTH = 'P569' %}
+{% set PROP_PLACE_OF_BIRTH = 'P19' %}
+{% set PROP_DATE_OF_DEATH = 'P570' %}
+{% set PROP_PLACE_OF_DEATH = 'P20' %}
+{% set PROP_FATHER = 'P22' %}
+{% set PROP_MOTHER = 'P25' %}
+{% set PROP_WIKITREE = 'P2949' %}
+{% set PROP_FAMILYSEARCH = 'P2889' %}
+{% set PROP_FORMATTER_URL = 'P1630' %}
+
+{% set wikidata_item = false %}
+{% if page.metadata.wikidata is defined and page.metadata.wikidata %}
+    {% set wikidata_item = wikidata(page.metadata.wikidata) %}
+{% endif %}
+
+{% set wikitree_profile = false %}
+{% if page.metadata.wikitree is defined and page.metadata.wikitree %}
+    {% set wikitree_profile = get_json('https://api.wikitree.com/api.php?action=getProfile&key=' ~ page.metadata.wikitree).0.profile %}
+{% endif %}
+
+{% macro wikidataDate(datavalue) %}
+    {% set format = 'Y' %}
+    {% if datavalue.precision == 10 %}
+        {% set format = 'F Y' %}
+    {% elseif datavalue.precision == 11 %}
+        {% set format = 'j F Y' %}
+    {% endif %}
+    {{ datavalue.time|date(format) }}
+{% endmacro %}
+
+{% macro dateAndPlaceField( wikidata_item, label, attrName, propName ) %}
+    {% set date = false %}
+    {% if page.metadata[attrName] is defined %}
+        {% set date = page.metadata[attrName] %}
+    {% elseif wikidata_item and wikidata_item.claims[propName] is defined %}
+        {% set date = _self.wikidataDate(wikidata_item.claims[propName][0].mainsnak.datavalue.value) %}
+    {% endif %}
+    {% if date %}
+        <div class="col-3"><strong>{{label}}</strong></div>
+        <div class="col-9">{{date}}</div>
+    {% endif %}
+{% endmacro %}
+
+{% block main %}
+
+        <h1>{{ page.metadata.title }}</h1>
+
+        {#
+        {% if wikitree_profile %}
+        <details>
+            <summmary>JSON</summary>
+            <pre>{{dump(wikitree_profile)}}</pre>
+        </details>
+        {% endif %}
+        #}
+
+        <aside>
+            {% if wikidata_item.claims.P18 is defined %}
+                {% set commons = commons(wikidata_item.claims.P18[0].mainsnak.datavalue.value) %}
+                    <figure itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="{{ commons.imageinfo.0.descriptionurl|escape('html_attr') }}" title="View on Wikimedia Commons">
+                            <img src="{{ commons.imageinfo.0.thumburl|escape('html_attr') }}" class="figure-img img-fluid" />
+                        </a>
+                        <figcaption itemprop="caption">
+                            {% if page.metadata.image_caption is defined %}
+                                {{page.metadata.image_caption is defined}}
+                            {% elseif commons.labels.en.value is defined %}
+                                {{ commons.labels.en.value }}
+                            {% endif %}
+                        </figcaption>
+                    </figure>
+            {% endif %}
+
+            {% if wikitree_profile %}
+                <div>
+                    <strong>Born:</strong>
+                    {{macros.wikitree_date(wikitree_profile.BirthDate, wikitree_profile.DataStatus.BirthDate)}}
+                    {{wikitree_profile.BirthLocation}}
+                </div>
+                <div>
+                    <strong>Died:</strong>
+                    {{macros.wikitree_date(wikitree_profile.DeathDate, wikitree_profile.DataStatus.DeathDate)}}
+                    {{wikitree_profile.DeathLocation}}
+                </div>
+            {% endif %}
+
+            <div><strong>Parents:</strong></div>
+            <div>
+                {% if page.metadata.parents is defined and page.metadata.parents %}
+                    <ul class="list-unstyled mb-0">
+                        {% for p in page.metadata.parents %}
+                            {% set parent = database.query('SELECT * FROM pages WHERE id = "/people/'~p~'"').fetch() %}
+                            {% if parent.id is defined %}
+                                <li><a href="{{page.link(parent.id)}}.html">{{parent.title}}</a></li>
+                            {% else %}
+                                <li>{{p}}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+
+            <div><strong>Partners:</strong></div>
+            <div>
+                {% set partners = [] %}
+                {# First collect all partners listed on this page. #}
+                {% if page.metadata.partners is defined and page.metadata.partners %}
+                    {% for p in page.metadata.partners|filter(v=>v) %}
+                        {% set partner = database.query('SELECT * FROM pages WHERE id = "/people/'~p~'"').fetch() %}
+                        {% if partner.id is defined %}
+                            {% set partners = partners|merge([partner]) %}
+                        {% else %}
+                            {% set partners = partners|merge([p]) %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                {# Then find all pages that reference this one as a partner. #}
+                {% set other_partners = database.query('SELECT p.* FROM pages p, json_each(p.partners) r WHERE r.value = "'~(page.id|basename)~'"').fetchAll() %}
+                {% for other_partner in other_partners %}
+                    {% set partners = partners|merge([other_partner]) %}
+                {% endfor %}
+                {# Then output them all together. #}
+                <ul>
+                    {% for partner in partners %}
+                        {% if partner.id is defined %}
+                            <li><a href="{{page.link(partner.id)}}.html">{{partner.title}}</a></li>
+                        {% else %}
+                            <li>{{partner}}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div>
+                <strong>Children:</strong>
+                {% set children = database.query('SELECT pages.* FROM pages,json_each(pages.parents) parents
+                    WHERE parents.value = "'~(page.id|basename)~'"').fetchAll() %}
+                {% if children %}
+                    <ul class="list-unstyled mb-0">
+                        {% for child in children %}
+                            <li><a href="{{page.link(child.id)}}.html">{{child.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+
+            <div class="authority-control">
+                <strong>Authority control:</strong>
+                {% if wikidata_item %}
+                    Wikidata: <a href="https://www.wikidata.org/wiki/{{wikidata_item.id}}">{{wikidata_item.id}}</a>
+                    {% for claims in wikidata_item.claims %}
+                        {% for snak in claims %}
+                            {% if snak.mainsnak.datatype == 'external-id' and snak.mainsnak.snaktype == 'value' %}
+                                {% set value = snak.mainsnak.datavalue.value %}
+                                {% set authControlItem = wikidata(snak.mainsnak.property) %}
+                                <span class="label">{{authControlItem.labels.en.value}}:</span>
+                                {% if attribute(authControlItem.claims, PROP_FORMATTER_URL).0 is defined %}
+                                    {% set url = attribute(authControlItem.claims, PROP_FORMATTER_URL).0.mainsnak.datavalue.value | replace({'$1': value}) %}
+                                    <a href="{{url}}" class="value">{{value}}</a>
+                                {% else %}
+                                    <span class="value">{{value}}</span>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% elseif page.metadata.wikitree is defined %}
+                    WikiTree: <a href="https://wikitree.com/wiki/{{page.metadata.wikitree}}">{{page.metadata.wikitree}}</a>
+                {% endif %}
+            </div>
+
+        </aside>
+
+        {% if page.metadata.wikidata is defined and page.metadata.wikidata %}
+            {% set wikidata_item = wikidata(page.metadata.wikidata) %}
+            {% if wikidata_item and wikidata_item.sitelinks.enwiki.title is defined %}
+                <h2>On Wikipedia</h2>
+                {{ wikipedia('en', wikidata_item.sitelinks.enwiki.title)|raw }}
+                <p><a href="https://en.wikipedia.org/wiki/{{wikidata_item.sitelinks.enwiki.title|replace({' ': '_'})}}">Read more on Wikipedia…</a></p>
+                {% if page.body %}
+                    <h2>Other notes</h2>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+        {{ page.body|md2html|raw }}
+
+        {% if page.metadata.references is defined %}
+        <h2>References</h2>
+        <ol>
+            {% set refnum = 1 %}
+            {% for k,v in page.metadata.references %}
+                <li value="{{refnum}}">{{v|md2html|raw}}</li>
+                {% set refnum = refnum + 1 %}
+            {% endfor %}
+        </ol>
+        {% endif %}
+
+    {% set items = database.query('SELECT p.* FROM pages p, json_each(p.people) j WHERE "/people/"||j.value LIKE "'~page.id~'" ORDER BY p.date').fetchAll() %}
+    {% if items|length > 0 %}
+        <h2>Related items</h2>
+        <div class="row">
+            {% for item in items %}
+                
+            {% endfor %}
+        </div>
+    {% endif %}
+
+{% endblock %}

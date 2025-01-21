@@ -1,5 +1,12 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --borders: #f1f1ea;
+}
+
 body {
-    margin: 0;
+    margin: auto;
+    max-width: 100em;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -42,21 +49,25 @@ main > aside {
     flex: 1;
     padding: 20px;
 }
+
 main > aside .logo {
     margin-top: 0;
     text-align: center;
 }
+
 main > aside nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 main > aside a {
     color: inherit;
 }
 
 main > article {
     flex: 10;
+    margin: 0.4em;
 }
 
 main > article hr {
@@ -64,8 +75,41 @@ main > article hr {
     margin: 1em 0;
 }
 
+main > article > aside {
+    float: right;
+    border: 1px solid rgb(230, 230, 230);
+    padding: 1em;
+    margin-left: 1em;
+    width: 25%;
+}
+
+main > article > aside ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+main > article > aside .authority-control {
+    font-size: smaller; border-top: 1px solid var(--borders);
+}
+
 a { text-decoration:none }
 a:hover { text-decoration:underline }
+
+table {
+    border-collapse: collapse;
+}
+
+thead tr th {
+    border-bottom: 2px solid #d7d6d6;
+}
+
+th, td {
+    padding: 0.2em;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #f0f0f0;
+}
 
 #map {
     width: 100%;
@@ -73,7 +117,7 @@ a:hover { text-decoration:underline }
 }
 
 body.item-template .image {
-    float: left;
+    float: right;
     margin: 0 1em 1em 0;
 }
 
@@ -93,8 +137,14 @@ body.item-template .image {
 }
 
 .main-tree {
+    text-align: center;
 }
 
 .main-tree img {
     height: 60vh;
+}
+
+@media (width <= 800px) {
+    body > main { flex-direction: column; }
+    main > article > aside { float: none; width: unset; margin: unset; }
 }

@@ -1,6 +1,6 @@
 {
     "require": {
-        "samwilson/basildon": "^3.2"
+        "samwilson/basildon": "^7"
     },
     "config": {
         "process-timeout": 0
@@ -10,14 +10,9 @@
             "inkscape --export-type=png --export-filename=assets/tree.png tree.svg",
             "inkscape --export-type=pdf --export-filename=assets/tree.pdf tree.svg"
         ],
-        "build-site": "basildon build . -t 100000",
-        "build-book": [
-            "latexmk",
-            "mv main.pdf assets/book.pdf"
-        ],
+        "build-site": "basildon build .",
         "build": [
             "@build-tree",
-            "@build-book",
             "@build-site"
         ],
         "deploy": [
