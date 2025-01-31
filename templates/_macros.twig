@@ -20,33 +20,51 @@
 {% macro image(image, link = true) %}
     {% set img_src = '' %}
     {% set img_href = '' %}
+    {% set width = null %}
+    {% if image.width is defined %}
+        {% set width = image.width %}
+    {% endif %}
+    {% set height = null %}
+    {% if image.height is defined %}
+        {% set height = image.height %}
+    {% endif %}
 
     {% if image.commons is defined %}
         {% set commons = commons(image.commons) %}
         {% set img_src = commons.imageinfo.0.thumburl %}
         {% set img_href = commons.imageinfo.0.descriptionurl %}
+        {% set width = commons.imageinfo.0.thumbwidth %}
+        {% set height = commons.imageinfo.0.thumbheight %}
 
     {% elseif image.flickr is defined %}
         {% set flickr = flickr(image.flickr) %}
         {% set img_src = flickr.urls.medium_image %}
         {% set img_href = flickr.urls.photopage %}
 
-    {% elseif image.internetarchive is defined %}
-        {% set img_src = 'https://archive.org/download/' ~ image.internetarchive %}
+    {% elseif image.ia is defined %}
+        {% set img_href = 'https://archive.org/details/' ~ image.ia %}
+        {% set img_src = 'https://archive.org/download/' ~ image.ia ~ '/' ~ image.ia_file %}
 
+    {% endif %}
+
+    {% set img_width = 500 %}
+    {% set img_height = null %}
+    {% if width and height %}
+        {% set ratio = width / img_width  %}
+        {% set img_height = height / ratio  %}
     {% endif %}
 
     {% if link %}
         <figure>
-            <a href="{{ img_href}}">
-                <img src="{{ img_src }}" itemprop="image" />
+            <a href="{{ img_href }}">
+                <img src="{{ img_src }}" itemprop="image" width="{{ img_width }}" height="{{img_height}}" />
             </a>
             {% if image.caption is defined %}
                 <figcaption class="figure-caption text-center">{{image.caption}}</figcaption>
             {% endif %}
         </figure>
     {% else %}
-        <img src="{{ img_src|escape('html_attr') }}" class="image" itemprop="image" />
+        <img src="{{ img_src }}" class="image" itemprop="image" width="{{img_width}}" height="{{img_height}}" />
     {% endif %}
 
 {% endmacro %}
