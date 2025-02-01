@@ -22,15 +22,40 @@
         {% if page.metadata.ia is defined %}
             <p>
                 <strong>Internet Archive:</strong>
-                <a href="https://archive.org/details/{{ page.metadata.ia }}">{{ page.metadata.ia }}</a>
+                {# Fetch the IA details just to confirm that the ID is correct. #}
+                {% set ia = get_xml('https://archive.org/download/' ~ page.metadata.ia ~ '/' ~ page.metadata.ia ~ '_meta.xml') %}
+                <a href="https://archive.org/details/{{ia.identifier}}">{{ia.identifier}}</a>
             </p>
         {% endif %}
 
         <p>
             <strong>Storage location:</strong>
             {% if page.metadata.storage_location %}
-                {% set sl = database.query('select * from pages where id = "/storage-locations/'~page.metadata.storage_location~'"').fetch %}
+                {% set sl = database.query('SELECT * FROM pages WHERE id = "/storage-locations/'~page.metadata.storage_location~'"').fetch %}
                 <a href="{{ page.link(sl.id) }}.html">{{ sl.title }}</a>
+
+                {% if page.metadata.storage_location_key is defined and page.metadata.storage_location_key %}
+                    (
+                    {# Previous #}
+                    {% set prev_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
+                        AND storage_location_key < "'~page.metadata.storage_location_key~'"
+                        AND storage_location_key != "'~page.metadata.storage_location_key~'"' %}
+                    {% set prev = database.query(prev_sql).fetch %}
+                    {% if prev %}
+                        <a href="{{ page.link(prev.id) }}.html" title="{{prev.title}}">← Previous</a>
+                    {% endif %}
+                    |
+                    {# Next #}
+                    {% set next_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
+                        AND storage_location_key > "'~page.metadata.storage_location_key~'"
+                        AND storage_location_key != "'~page.metadata.storage_location_key~'"' %}
+                    {% set next = database.query(next_sql).fetch %}
+                    {% if next %}
+                        <a href="{{ page.link(next.id) }}.html" title="{{next.title}}">Next →</a>
+                    {% endif %}
+                    )
+                {% endif %}
+
             {% endif %}
         </p>
 

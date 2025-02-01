@@ -1776,16 +1776,16 @@
         },
         {
             "name": "samwilson/basildon",
-            "version": "8.0.0",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/samwilson/basildon.git",
-                "reference": "ab1fb6932c0a6ee36442e749a4e1bd091ab54d7d"
+                "reference": "56b0b7e13d2642fa86a2391f0049ba362430bef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samwilson/basildon/zipball/ab1fb6932c0a6ee36442e749a4e1bd091ab54d7d",
-                "reference": "ab1fb6932c0a6ee36442e749a4e1bd091ab54d7d",
+                "url": "https://api.github.com/repos/samwilson/basildon/zipball/56b0b7e13d2642fa86a2391f0049ba362430bef1",
+                "reference": "56b0b7e13d2642fa86a2391f0049ba362430bef1",
                 "shasum": ""
             },
             "require": {
@@ -1835,9 +1835,9 @@
             "description": "A static site generator.",
             "support": {
                 "issues": "https://github.com/samwilson/basildon/issues",
-                "source": "https://github.com/samwilson/basildon/tree/8.0.0"
+                "source": "https://github.com/samwilson/basildon/tree/8.1.0"
             },
-            "time": "2025-01-30T06:19:57+00:00"
+            "time": "2025-02-01T02:58:47+00:00"
         },
         {
             "name": "samwilson/commonmark-latex",
