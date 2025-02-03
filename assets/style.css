@@ -13,7 +13,7 @@ body {
     font-family: sans-serif;
 }
 body > header {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,15 +31,16 @@ body > header form {
     text-align: right;
 }
 body > main {
-    flex: 20;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: row-reverse;
 }
 body > footer {
-    flex: 1;
+    flex: 0 0 auto;
     font-size: smaller;
     text-align: right;
     background-color: #efefef;
+    padding: 1.1em 0.7em;
 }
 body > footer p {
     margin: 0;

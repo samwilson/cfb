@@ -1,32 +1,25 @@
 ---
 template: person
-title:
+title: Moses Hezelwood
 description:
 images:
   - commons: 
     flickr: 
     internetarchive: 
     caption: 
-birth_date: 
-birth_date_precision: 
-birth_place: 
-death_date: 
-death_date_precision: 
-death_place: 
 parents:
   - 
 partners:
-  - 
+  - elizabeth-mead
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Hezelwood-2
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
-\biohead{Moses Hezelwood}{}{}
 
 Moses Hezelwood was born on 23 March 1777 in Ruswarp, Yorkshire to \bioref{Thomas_Hezelwood} and Mary (surname unknown)
 and christened on 15 June 1777 in Whitby, Yorkshire, England.\cite{MHezelwoodBirth}

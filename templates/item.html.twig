@@ -12,6 +12,39 @@
 
         <p><strong>Item number:</strong> <span itemprop="identifier">{{ page.id|basename }}</span></p>
 
+        <p>
+            <strong>Storage location:</strong>
+            {% if page.metadata.storage_location %}
+                {% set sl = database.query('SELECT * FROM pages WHERE id = "/storage-locations/'~page.metadata.storage_location~'"').fetch %}
+                <a href="{{ page.link(sl.id) }}.html">{{ sl.title }}</a>
+
+                {% if page.metadata.storage_location_key is defined and page.metadata.storage_location_key %}
+                    (
+                    {# Previous #}
+                    {% set prev_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
+                        AND storage_location_key < "'~page.metadata.storage_location_key~'"
+                        AND storage_location_key != "'~page.metadata.storage_location_key~'"
+                        ORDER BY storage_location_key DESC' %}
+                    {% set prev = database.query(prev_sql).fetch %}
+                    {% if prev %}
+                        <a href="{{ page.link(prev.id) }}.html" title="{{prev.title}}">← Previous</a>
+                    {% endif %}
+                    |
+                    {# Next #}
+                    {% set next_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
+                        AND storage_location_key > "'~page.metadata.storage_location_key~'"
+                        AND storage_location_key != "'~page.metadata.storage_location_key~'"
+                        ORDER BY storage_location_key ASC' %}
+                    {% set next = database.query(next_sql).fetch %}
+                    {% if next %}
+                        <a href="{{ page.link(next.id) }}.html" title="{{next.title}}">Next →</a>
+                    {% endif %}
+                    )
+                {% endif %}
+
+            {% endif %}
+        </p>
+
         {% if page.metadata.date is defined %}
             <p>
                 <strong>Date:</strong>
@@ -27,37 +60,6 @@
                 <a href="https://archive.org/details/{{ia.identifier}}">{{ia.identifier}}</a>
             </p>
         {% endif %}
-
-        <p>
-            <strong>Storage location:</strong>
-            {% if page.metadata.storage_location %}
-                {% set sl = database.query('SELECT * FROM pages WHERE id = "/storage-locations/'~page.metadata.storage_location~'"').fetch %}
-                <a href="{{ page.link(sl.id) }}.html">{{ sl.title }}</a>
-
-                {% if page.metadata.storage_location_key is defined and page.metadata.storage_location_key %}
-                    (
-                    {# Previous #}
-                    {% set prev_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
-                        AND storage_location_key < "'~page.metadata.storage_location_key~'"
-                        AND storage_location_key != "'~page.metadata.storage_location_key~'"' %}
-                    {% set prev = database.query(prev_sql).fetch %}
-                    {% if prev %}
-                        <a href="{{ page.link(prev.id) }}.html" title="{{prev.title}}">← Previous</a>
-                    {% endif %}
-                    |
-                    {# Next #}
-                    {% set next_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
-                        AND storage_location_key > "'~page.metadata.storage_location_key~'"
-                        AND storage_location_key != "'~page.metadata.storage_location_key~'"' %}
-                    {% set next = database.query(next_sql).fetch %}
-                    {% if next %}
-                        <a href="{{ page.link(next.id) }}.html" title="{{next.title}}">Next →</a>
-                    {% endif %}
-                    )
-                {% endif %}
-
-            {% endif %}
-        </p>
 
         {% if page.metadata.tags is defined %}
             <p>
@@ -104,6 +106,13 @@
                 Please <a href="{{ page.link('/contact') }}.html">contact us</a> for more information about reuse.
             {% endif %}
         </p>
+
+        {% if page.metadata.description is defined %}
+            <p>
+                <strong>Description:</strong>
+                {{ page.metadata.description|md2html|raw }}
+            </p>
+        {% endif %}
 
         {% if page.metadata.images is defined %}
             <h3 id="images">Images</h3>
