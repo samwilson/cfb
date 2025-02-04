@@ -152,3 +152,7 @@ body.item-template .image {
     body > main { flex-direction: column; }
     main > article > aside { float: none; width: unset; margin: unset; }
 }
+
+.illegible {
+    color: rgb(18, 92, 11);
+}
