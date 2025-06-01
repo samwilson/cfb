@@ -7,7 +7,9 @@
         <h2 itemprop="name">{{ page.metadata.title }}</h2>
 
         {% if page.metadata.images.0 is defined %}
-            {{ macros.image(page.metadata.images.0, false) }}
+            <div class="image">
+                {{ macros.image(page.metadata.images.0, false) }}
+            </div>
         {% endif %}
 
         <p><strong>Item number:</strong> <span itemprop="identifier">{{ page.id|basename }}</span></p>
@@ -65,7 +67,7 @@
             <p>
                 <strong>Tags:</strong>
                 {% for t in page.metadata.tags %}
-                    {% set tag = database.query('SELECT * FROM pages WHERE id = "/tags/'~t~'"').fetch() %}
+                    {% set tag = database.query( 'SELECT * FROM pages WHERE id = "/tags/'~t~'"' ).fetch() %}
                     {% if tag %}
                         {% if tag.wikidata %}
                             <span itemscope itemtype="http://schema.org/Thing">
@@ -77,6 +79,21 @@
                         {% endif %}
                     {% else %}
                         {{ t }}
+                    {% endif %}
+                    &middot;
+                {% endfor %}
+            </p>
+        {% endif %}
+
+        {% if page.metadata.people is defined %}
+            <p>
+                <strong>People:</strong>
+                {% for p in page.metadata.people %}
+                    {% set person = database.query( 'SELECT * FROM pages WHERE id = "/people/'~p~'"' ).fetch() %}
+                    {% if person %}
+                        <a href="{{ page.link(person.id) }}.html" rel="tag">{{ person.title }}</a>
+                    {% else %}
+                        {{ p }}
                     {% endif %}
                     &middot;
                 {% endfor %}
@@ -118,7 +135,12 @@
             <h3 id="images">Images</h3>
             <div class="gallery">
                 {% for idx,image in page.metadata.images %}
-                    {{ macros.image(image) }}
+                    <figure>
+                        {{ macros.image(image) }}
+                        {% if image.caption is defined and image.caption %}
+                            <figcaption>{{image.caption}}</figcaption>
+                        {% endif %}
+                    </figure>
                 {% endfor %}
             </div>
         {% endif %}

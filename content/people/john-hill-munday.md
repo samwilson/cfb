@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: John Hill Munday
 description:
 images:
   - commons: 
@@ -26,8 +26,7 @@ geni:
 ancestry: 
 myheritage: 
 ---
-\biohead{John Hill Munday}{}{c.~1900 at the Mendips.\cite{JHMmendips}}
-\index{Munday, John Hill}
+\biohead{}{}{c.~1900 at the Mendips.\cite{JHMmendips}}
 
 John Hill Munday was born on 6 July 1844 at 4:30 pm\cite{GeorgeHillMundayNotes}
 in Weymouth Street, Warminster, Wiltshire, England\cite{JHMtree, Census1861, JMHbirth}

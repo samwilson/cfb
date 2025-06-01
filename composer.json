@@ -7,8 +7,8 @@
     },
     "scripts": {
         "build-tree": [
-            "inkscape --export-type=png --export-filename=assets/tree.png tree.svg",
-            "inkscape --export-type=pdf --export-filename=assets/tree.pdf tree.svg"
+            "inkscape --export-type=png --export-filename=assets/tree.png assets/tree.svg",
+            "inkscape --export-type=pdf --export-filename=assets/tree.pdf assets/tree.svg"
         ],
         "build-site": "basildon build .",
         "build": [
@@ -18,6 +18,9 @@
         "deploy": [
             "@build",
             "./node_modules/.bin/netlify deploy --prod -d output"
+        ],
+        "newitem": [
+            "cp _item_template.md content/items/$(( $(ls -1q content/items | wc -l) + 1 )).md"
         ]
     }
 }

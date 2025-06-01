@@ -117,7 +117,7 @@ tr:nth-child(2n+1) {
     height: 100%;
 }
 
-body.item-template .image {
+body.item-template .image img {
     float: right;
     margin: 0 1em 1em 0;
     max-width: 100%;
@@ -127,15 +127,27 @@ body.item-template .image {
 .item-template #images {
     clear: both;
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
 }
-.gallery figure {
+.gallery > figure,
+.gallery > a {
     width: 300px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.gallery figure img {
+.gallery a {
+    text-decoration: none;
+    display: block;
+}
+.gallery a:hover {
+    background-color: #efefef;
+}
+.gallery img {
     max-width: 100%;
     height: auto;
 }
@@ -151,8 +163,17 @@ body.item-template .image {
 @media (width <= 800px) {
     body > main { flex-direction: column; }
     main > article > aside { float: none; width: unset; margin: unset; }
+    body.item-template .image img { margin: 0; }
 }
 
 .illegible {
     color: rgb(18, 92, 11);
+}
+
+.page-break {
+    font-size: x-smaller;
+    text-align: center;
+    border-bottom: 1px solid #c7c7c7;
+    background: linear-gradient(to top, #eee 0%, white 50%);
+    color:gray;
 }

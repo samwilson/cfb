@@ -202,9 +202,17 @@
     {% set items = database.query('SELECT p.* FROM pages p, json_each(p.people) j WHERE "/people/"||j.value LIKE "'~page.id~'" ORDER BY p.date').fetchAll() %}
     {% if items|length > 0 %}
         <h2>Related items</h2>
-        <div class="row">
+        <div class="gallery">
             {% for item in items %}
-                {{item.id}}
+                <a href="{{page.link(item.id)}}.html">
+                    <figure>
+                        <figcaption>
+                            {{item.title}}
+                            {{macros.date(item.date, item.date_precision)}}
+                        </figcaption>
+                        {{ macros.image(json_decode(item.images).0, false) }}
+                    </figure>
+                </a>
             {% endfor %}
         </div>
     {% endif %}

@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: James Munday
 description:
 images:
   - commons: 

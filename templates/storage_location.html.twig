@@ -1,6 +1,7 @@
 {% extends '_base.html.twig' %}
 
 {% block main %}
+    {% import '_macros.twig' as macros %}
 
     <h2>
         <a href="{{ page.link('/storage-locations') }}.html">Storage location:</a>
@@ -16,9 +17,13 @@
     {% endif %}
 
     <ol>
-    {% for item in database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location', {storage_location: page.id}) %}
-        <li><a href="{{ page.link(item.id) }}.html">{{ item.title }}</a></li>
-    {% endfor %}
+        {% for item in database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location ORDER BY storage_location_key ASC', {storage_location: page.id}) %}
+            <li>
+                [{{item.storage_location_key}}]
+                <a href="{{ page.link(item.id) }}.html">{{ item.title }}</a>
+                {{ macros.date(item.date, item.date_precision) }}
+            </li>
+        {% endfor %}
     </ol>
 
 {% endblock %}

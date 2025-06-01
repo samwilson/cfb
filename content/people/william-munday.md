@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: William Munday
 description:
 images:
   - commons: 
@@ -25,10 +25,12 @@ familysearch:
 geni: 
 ancestry: 
 myheritage: 
+references:
+  WillMundayBirth: Munday family tree
+  census1871: 1871 UK Census, Battersea, 23, 133, Piece 703, Folio 128, p.35
 ---
-\biohead{William Munday}{}{ }
 
-William Munday was born on 7 August 1800 \cite{WillMundayBirth} in Bishopstrow, near Warminster, Wiltshire, to James Munday \bioref{James_Munday} and Jemima Browne \bioref{Jemima_Browne}.  He had eight siblings:  Jemima Munday (1798-1870), Catherine Munday (1802--1883), Sarah Munday (1803--1869), James Munday (1805--1863), Mary Elizabeth Munday (1807--1896), John Munday (1809--1835), Henry Thomas Munday (1813--1895) and George Munday (1815-1830).
+William Munday was born on 7 August 1800{ref|WillMundayBirth}{ref|census1871} in Bishopstrow, near Warminster, Wiltshire, to James Munday \bioref{James_Munday} and Jemima Browne \bioref{Jemima_Browne}.  He had eight siblings:  Jemima Munday (1798-1870), Catherine Munday (1802--1883), Sarah Munday (1803--1869), James Munday (1805--1863), Mary Elizabeth Munday (1807--1896), John Munday (1809--1835), Henry Thomas Munday (1813--1895) and George Munday (1815-1830).
 
 He married Mary Hill \bioref{Mary_Hill} on 1 December 1835 in Paulton, Somerset and they had ten children:  George Hill Munday (1836--1862), Captain James William Munday (1838-1875), Mary Elizabeth Munday (1840--1849), Anna Maria Munday (1841--1895), Sarah Adeline Munday (1843-1924), John Hill Munday \bioref{John_Hill_Munday}, Thomas Hill Munday (1846--1862), Walter Edward Munday (1847-1932), Nelson Munday (1848--1886) and Louisa Fry Munday (1851--1881).
 

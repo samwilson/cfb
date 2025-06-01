@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Eric Geoffrey West Hancox
 description:
 images:
   - commons: 
@@ -20,7 +20,7 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Hancox-913
 familysearch: 
 geni: 
 ancestry: 

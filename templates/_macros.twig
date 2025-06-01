@@ -54,19 +54,9 @@
         {% set img_height = height / ratio  %}
     {% endif %}
 
-    {% if link %}
-        <figure>
-            <a href="{{ img_href }}">
-                <img src="{{ img_src }}" itemprop="image" width="{{ img_width }}" height="{{img_height}}" />
-            </a>
-            {% if image.caption is defined %}
-                <figcaption class="figure-caption text-center">{{image.caption}}</figcaption>
-            {% endif %}
-        </figure>
-    {% else %}
-        <img src="{{ img_src }}" class="image" itemprop="image" width="{{img_width}}" height="{{img_height}}" />
-    {% endif %}
-
+    {% if link %}<a href="{{ img_href }}">{% endif %}
+        <img src="{{ img_src }}" itemprop="image" width="{{ img_width }}" height="{{img_height}}" />
+    {% if link %}</a>{% endif %}
 {% endmacro %}
 
 {% macro wikitree_date(date, status) %}

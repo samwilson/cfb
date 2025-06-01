@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Julia Leat
 description:
 images:
   - commons: 
@@ -26,6 +26,7 @@ geni:
 ancestry: 
 myheritage: 
 ---
-\biohead{Julia Leat}{}{}
 
-Julia Leat was the adopted daughter of \bioref{Ralph_Munday} and \bioref{Vera_Maunder}. She died in 2015 in Mandurah, Western Australia.
+**Julia Leat** was the adopted daughter
+of {link|people/ralph-munday} and {link|people/vera-maunder}.
+She died in 2015 in Mandurah, Western Australia.

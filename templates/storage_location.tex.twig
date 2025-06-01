@@ -28,12 +28,17 @@
 
 {% set items = database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location', {storage_location: page.id}).fetchAll() %}
 {% for item in items %}
-  {% if item.image %}
-    {% set image = item.image %}
+  {% set images = json_decode(item.images) %}
+  {% if images.0 is defined and images.0.commons is defined %}
+    {% set image = commons(images.0.commons).imageinfo.0.thumburl %}
+  {% elseif images.0 is defined and images.0.flickr is defined %}
+    {% set image = flickr(images.0.flickr).urls.medium_image %}
+  {% elseif images.0 is defined and images.0.ia is defined %}
+    {% set image = 'https://archive.org/download/' ~ images.0.ia ~ '/' ~ images.0.ia_file %}
   {% else %}
     {% set image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Noun_Project_unknown_icon_762411_cc.svg/480px-Noun_Project_unknown_icon_762411_cc.svg.png' %}
   {% endif %}
-  {% set caption = 'Item ' ~ item.id|basename ~ ', \\textbf{' ~ item.title ~ '} ' ~ item.description ~ ' \\url{' ~ site.config.url ~ item.id ~ '}' %}
+  {% set caption = 'Item ' ~ item.id|basename ~ ', \\textbf{' ~ item.title ~ '} ' ~ item.description %}
   {% if loop.index % 2 == 1 %}
   \begin{figure}
     \begin{minipage}{0.45\textwidth}
