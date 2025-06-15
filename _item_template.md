@@ -11,6 +11,8 @@ date:
 date_precision: 
 storage_location: 
 storage_location_key: 
+people:
+  - 
 tags:
   - 
 ---

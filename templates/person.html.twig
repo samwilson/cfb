@@ -17,9 +17,13 @@
     {% set wikidata_item = wikidata(page.metadata.wikidata) %}
 {% endif %}
 
+{% set wikitree_api_url = 'https://api.wikitree.com/api.php?action=getPerson&fields=Name,Derived.LongName,BirthDate,BirthLocation,DeathLocation,DeathDate,DataStatus,Parents,Mother,Father,Children,Spouses,Siblings' %}
 {% set wikitree_profile = false %}
 {% if page.metadata.wikitree is defined and page.metadata.wikitree %}
-    {% set wikitree_profile = get_json('https://api.wikitree.com/api.php?action=getProfile&key=' ~ page.metadata.wikitree).0.profile %}
+    {% set wikitree_profile = get_json(wikitree_api_url ~ '&key=' ~ page.metadata.wikitree).0.person %}
+{% endif %}
+{% if ( not wikitree_profile ) and wikidata_item and attribute(wikidata_item.claims, PROP_WIKITREE) %}
+    {% set wikitree_profile = get_json(wikitree_api_url ~ '&key=' ~ attribute(wikidata_item.claims, PROP_WIKITREE)[0].mainsnak.datavalue.value).0.person %}
 {% endif %}
 
 {% macro wikidataDate(datavalue) %}
@@ -42,6 +46,18 @@
     {% if date %}
         <div class="col-3"><strong>{{label}}</strong></div>
         <div class="col-9">{{date}}</div>
+    {% endif %}
+{% endmacro %}
+
+{% macro wikitreePersonListItem( database, page, wikitree_data ) %}
+    {% set person = database.query('SELECT * FROM pages WHERE wikitree = "' ~ wikitree_data.Name ~ '"').fetch() %}
+    {% if person.id is defined %}
+        <li><a href="{{page.link(person.id)}}.html">{{person.title}}</a></li>
+    {% else %}
+        <li>
+            {{wikitree_data.LongName}}
+            (<a href="https://www.wikitree.com/wiki/{{wikitree_data.Name}}" title="View this person's profile on WikiTree">{{wikitree_data.Name}}</a>)
+        </li>
     {% endif %}
 {% endmacro %}
 
@@ -90,61 +106,41 @@
 
             <div><strong>Parents:</strong></div>
             <div>
-                {% if page.metadata.parents is defined and page.metadata.parents %}
+                {% if wikitree_profile.Parents is defined %}
                     <ul class="list-unstyled mb-0">
-                        {% for p in page.metadata.parents %}
-                            {% set parent = database.query('SELECT * FROM pages WHERE id = "/people/'~p~'"').fetch() %}
-                            {% if parent.id is defined %}
-                                <li><a href="{{page.link(parent.id)}}.html">{{parent.title}}</a></li>
-                            {% else %}
-                                <li>{{p}}</li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
+                    {% for p in wikitree_profile.Parents %}
+                        {{ _self.wikitreePersonListItem( database, page, p ) }}
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+            <div><strong>Siblings:</strong></div>
+            <div>
+                {% if wikitree_profile.Siblings is defined %}
+                    <ul class="list-unstyled mb-0">
+                    {% for p in wikitree_profile.Siblings %}
+                        {{ _self.wikitreePersonListItem( database, page, p ) }}
+                    {% endfor %}
                 {% endif %}
             </div>
 
             <div><strong>Partners:</strong></div>
             <div>
-                {% set partners = [] %}
-                {# First collect all partners listed on this page. #}
-                {% if page.metadata.partners is defined and page.metadata.partners %}
-                    {% for p in page.metadata.partners|filter(v=>v) %}
-                        {% set partner = database.query('SELECT * FROM pages WHERE id = "/people/'~p~'"').fetch() %}
-                        {% if partner.id is defined %}
-                            {% set partners = partners|merge([partner]) %}
-                        {% else %}
-                            {% set partners = partners|merge([p]) %}
-                        {% endif %}
+                {% if wikitree_profile.Spouses is defined %}
+                    <ul class="list-unstyled mb-0">
+                    {% for p in wikitree_profile.Spouses %}
+                        {{ _self.wikitreePersonListItem( database, page, p ) }}
                     {% endfor %}
                 {% endif %}
-                {# Then find all pages that reference this one as a partner. #}
-                {% set other_partners = database.query('SELECT p.* FROM pages p, json_each(p.partners) r WHERE r.value = "'~(page.id|basename)~'"').fetchAll() %}
-                {% for other_partner in other_partners %}
-                    {% set partners = partners|merge([other_partner]) %}
-                {% endfor %}
-                {# Then output them all together. #}
-                <ul>
-                    {% for partner in partners %}
-                        {% if partner.id is defined %}
-                            <li><a href="{{page.link(partner.id)}}.html">{{partner.title}}</a></li>
-                        {% else %}
-                            <li>{{partner}}</li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
             </div>
 
             <div>
                 <strong>Children:</strong>
-                {% set children = database.query('SELECT pages.* FROM pages,json_each(pages.parents) parents
-                    WHERE parents.value = "'~(page.id|basename)~'"').fetchAll() %}
-                {% if children %}
+                {% if wikitree_profile.Children is defined %}
                     <ul class="list-unstyled mb-0">
-                        {% for child in children %}
-                            <li><a href="{{page.link(child.id)}}.html">{{child.title}}</a></li>
-                        {% endfor %}
-                    </ul>
+                    {% for p in wikitree_profile.Children %}
+                        {{ _self.wikitreePersonListItem( database, page, p ) }}
+                    {% endfor %}
                 {% endif %}
             </div>
 

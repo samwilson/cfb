@@ -89,6 +89,10 @@ main > article > aside ul {
     margin: 0;
 }
 
+main > article > aside img {
+    max-width: 100%;
+}
+
 main > article > aside .authority-control {
     font-size: smaller; border-top: 1px solid var(--borders);
 }

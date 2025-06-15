@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Mary Gilmour
 description:
 images:
   - commons: 
@@ -20,7 +20,7 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Gilmour-1427
 familysearch: 
 geni: 
 ancestry: 

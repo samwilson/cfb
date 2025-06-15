@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Nora Katie Munday
 description:
 images:
   - commons: 
@@ -20,13 +20,12 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Munday-2092
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
-\biohead{Nora Katie Munday}{}{}
 
 Nora was born at 7.45pm on 5 June 1881 at  Shalston Villas, Surbiton Hill,  Surbiton, Surrey to \bioref{John_Hill_Munday} and \bioref{Catherine_Aldridge}, and christened on 27 July 1881 at Christchurch, Surbiton.\cite{NoraMundayBirth} 	She had four siblings: \bioref{Kathleen_Munday}, \bioref{Mildred_Mary_Munday}, \bioref{Ralph_Munday}, and \bioref{Margery_Munday}.
 

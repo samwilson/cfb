@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Marian Gilmour Croskery
 description:
 images:
   - commons: 
@@ -20,7 +20,7 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Croskery-49
 familysearch: 
 geni: 
 ancestry: 

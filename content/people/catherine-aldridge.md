@@ -20,7 +20,7 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Aldridge-2811
 familysearch: 
 geni: 
 ancestry: 
