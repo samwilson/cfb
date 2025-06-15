@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="{{ page.link('/style.css') }}" />
     <link rel="alternate" type="application/pdf" href="{{ page.link(page.id) }}.pdf" />
     <link rel="canonical" href="{{ site.config.url }}{{ page.id }}.html" />
+
+    <meta property="og:title" content="{{ page.metadata.title|escape('html_attr') }}" />
+
+    {% if page.metadata.images.0 is defined and page.metadata.images.0 %}
+        {% if page.metadata.images.0.commons is defined and page.metadata.images.0.commons %}
+            {% set img_src = commons(page.metadata.images.0.commons).imageinfo.0.thumburl %}
+        {% elseif page.metadata.images.0.flickr is defined and page.metadata.images.0.flickr %}
+            {% set img_src = flickr(page.metadata.images.0.flickr).urls.medium_image %}
+        {% endif %}
+        {% if img_src is defined %}
+            <meta property="og:image" content="{{ img_src|escape('html_attr') }}" />
+        {% endif %}
+    {% endif %}
+
+    {% if page.metadata.description is defined and page.metadata.description %}
+        <meta property="og:description" content="{{page.metadata.description|escape('html_attr')}}" />
+    {% endif %}
+
     {% block head %}{% endblock %}
 </head>
 <body class="{{ page.metadata.template }}-template">

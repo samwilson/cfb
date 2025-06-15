@@ -113,14 +113,20 @@
                              alt="Public Domain Mark" />
                     </a>
                     This work is free of known copyright restrictions and is in the public domain.
+                    {% if page.metadata.pd_year is defined and page.metadata.pd_year %}
+                        It entered the public domain in {{page.metadata.pd_year}}.
+                    {% endif %}
                 </span>
             {% elseif page.metadata.license|lower == 'copyright' %}
                 &copy;
                 {{ macros.date(page.metadata.date, 'year') }}
-                {% if page.metadata.author is defined %}{{ page.metadata.author }}{% else %}<abbr title="Anonymous author">Anon.</abbr>{% endif %}
+                {% if page.metadata.author is defined %}{{ page.metadata.author }}{% else %}<em>unknown author</em>{% endif %}.
             {% else %}
-                No license has been specified for this file.
+                No license has been specified for this work.
                 Please <a href="{{ page.link('/contact') }}.html">contact us</a> for more information about reuse.
+            {% endif %}
+            {% if page.metadata.license|lower != 'pd' and page.metadata.pd_year is defined and page.metadata.pd_year %}
+                This work will enter the public domain in {{page.metadata.pd_year}}.
             {% endif %}
         </p>
 

@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Virginia Kathleen Denton Barker
 description:
 images:
   - commons: 
@@ -20,13 +20,12 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Munday-1441
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
-\biohead{Virginia Kathleen Denton Barker}{}{}
 
 Virginia Kathleen Denton Barker was born on 7th September 1919 \cite{VKDBarkerManuscript} in Birkenhead to \bioref{James_Denton_Barker} and \bioref{Kathleen_Munday}.
 She had two older brothers:  \bioref{Bertram_Mead_Denton_Barker} and \bioref{Ralph_Munday_Denton-Barker}.

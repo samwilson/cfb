@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Bertram Mead Denton Barker
 description:
 images:
   - commons: 
@@ -20,13 +20,13 @@ partners:
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Munday-1442
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
-\biohead{Bertram Mead Denton Barker}{}{During the war\cite{BMDBwar}}
+\biohead{}{}{During the war\cite{BMDBwar}}
 
 Bertram Mead Denton Barker was born on 13 February 1915 in Birkenhead, Cheshire.  His parents were James Denton Barker \bioref{James_Denton_Barker} and Kathleen Munday \bioref{Kathleen_Munday} and he had two siblings: Ralph Munday Denton Barker \bioref{Ralph_Munday_Denton-Barker} and Virginia Kathleen Denton Barker \bioref{Virginia_Kathleen_Denton_Barker}.
 

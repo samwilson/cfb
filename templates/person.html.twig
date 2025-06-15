@@ -204,7 +204,7 @@
                     <figure>
                         <figcaption>
                             {{item.title}}
-                            {{macros.date(item.date, item.date_precision)}}
+                            ({{macros.date(item.date, item.date_precision)}})
                         </figcaption>
                         {{ macros.image(json_decode(item.images).0, false) }}
                     </figure>

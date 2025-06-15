@@ -3,18 +3,14 @@ template: person
 title: Ralph Munday Denton-Barker
 description: 1916–1990
 images:
-  - commons: Ralph-denton-barker_13991371815_o.jpg
-    link: Insurance company staff photo
-    caption: Alliance Insurance Company staff photo, c.1935
-  - commons: Cropped-staff-photo 13968275436 o.png
-    caption: Insurance company staff photo (Ralph is top left)
-    link: 
-  - commons: Ralph Denton-Barker, 1940 (cropped).png
-    caption: [[Ralph Denton-Barker, 1940|1940]]
-  - commons: RalphBarker02 19420707.png
-    caption: [[Ralph in the army|7 July 1942]]
-  - commons: Mead_Ralph_Virginia_Nov_1922.png
-    caption: Mead, Ralph, and Virginia in November 1922.
+  - flickr: 54590509913
+    caption: Alliance Insurance Company staff photo, c.1938 (Ralph is top left)
+  # - commonsx: Ralph Denton-Barker, 1940 (cropped).png
+  #   caption: 1940.
+  # - commonsx: RalphBarker02 19420707.png
+  #   caption: 7 July 1942.
+  # - commonsx: Mead_Ralph_Virginia_Nov_1922.png
+  #   caption: Mead, Ralph, and Virginia in November 1922.
 parents:
   - james-denton-barker
   - kathleen-munday

@@ -1,29 +1,18 @@
 ---
 template: person
-title:
+title: Geoffrey George Powell
 description:
 images:
   - commons: 
     flickr: 
     internetarchive: 
     caption: 
-birth_date: 
-birth_date_precision: 
-birth_place: 
-death_date: 
-death_date_precision: 
-death_place: 
-parents:
-  - 
-partners:
-  - 
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Powell-21043
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
-\biohead{Geoffrey George Powell}{}{}

@@ -94,7 +94,10 @@ main > article > aside img {
 }
 
 main > article > aside .authority-control {
-    font-size: smaller; border-top: 1px solid var(--borders);
+    font-size: smaller;
+    border-top: 1px solid var(--borders);
+    padding-top: 1em;
+    margin-top: 1em;
 }
 
 a { text-decoration:none }
@@ -147,6 +150,7 @@ body.item-template .image img {
 .gallery a {
     text-decoration: none;
     display: block;
+    color: black;
 }
 .gallery a:hover {
     background-color: #efefef;
