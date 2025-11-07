@@ -1,36 +1,25 @@
 ---
 template: person
-title:
+title: Charles Frederick Strangeways Barker
 description:
 images:
   - commons: 
     flickr: 
     internetarchive: 
     caption: 
-birth_date: 
-birth_date_precision: 
-birth_place: 
-death_date: 
-death_date_precision: 
-death_place: 
-parents:
-  - 
-partners:
-  - 
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Barker-16122
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
-\biohead{Charles Frederick Strangeways Barker}{}{}
 
-He was born on 21 August 1878 in	Liverpool, Lancashire to \bioref{Thomas_Henry_Barker} and \bioref{Mary_Ellen_Moulsdale}, and christened on 30 September 1877 at St Brides, Liverpool \cite{CFSBarkerBaptism}. He had six siblings: \bioref{James_Denton_Barker}, Reverend \bioref{Thomas_Percy_Conyers_Barker}, \bioref{Francis_Darcy_Mead_Barker}, \bioref{William_Danby_Holt_Barker}, \bioref{Jonathan_Tong_Barker} and \bioref{Henry_Bertram_Mitford_Barker}.
+**Charles Frederick Strangeways Barker** was born on 21 August 1878 in	Liverpool, Lancashire to {Thomas_Henry_Barker} and \bioref{Mary_Ellen_Moulsdale}, and christened on 30 September 1877 at St Brides, Liverpool \cite{CFSBarkerBaptism}. He had six siblings: \bioref{James_Denton_Barker}, Reverend \bioref{Thomas_Percy_Conyers_Barker}, \bioref{Francis_Darcy_Mead_Barker}, \bioref{William_Danby_Holt_Barker}, \bioref{Jonathan_Tong_Barker} and \bioref{Henry_Bertram_Mitford_Barker}.
 
-In 1901 he was an Assistant Clerk at the Liverpool  Chamber of Commerce \cite{CFSBarkerOccupation}.  By 1910, he had enlisted in the  4th Battalion, Cheshire Regiment, Reg. No. 1021 \cite{CFSBarkerMilitary}.
+In 1901 he was an Assistant Clerk at the Liverpool Chamber of Commerce \cite{CFSBarkerOccupation}.  By 1910, he had enlisted in the  4th Battalion, Cheshire Regiment, Reg. No. 1021 \cite{CFSBarkerMilitary}.
 
 He married Phyllis May Wickham and they had one daughter, Peggy. In 1930 they were living at 'Charlton', Aughton (near Ormskirk), Lancashire \cite{CFSBarker1930}.
 

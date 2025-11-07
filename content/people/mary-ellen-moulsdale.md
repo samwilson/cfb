@@ -1,26 +1,16 @@
 ---
 template: person
-title:
+title: Mary Ellen Moulsdale
 description:
 images:
   - commons: 
     flickr: 
     internetarchive: 
     caption: 
-birth_date: 
-birth_date_precision: 
-birth_place: 
-death_date: 
-death_date_precision: 
-death_place: 
-parents:
-  - 
-partners:
-  - 
 keywords:
   - 
 wikidata: 
-wikitree: 
+wikitree: Moulsdale-37
 familysearch: 
 geni: 
 ancestry: 
