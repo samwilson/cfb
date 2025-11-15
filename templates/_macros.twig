@@ -41,9 +41,13 @@
         {% set img_src = flickr.urls.medium_image %}
         {% set img_href = flickr.urls.photopage %}
 
-    {% elseif image.ia is defined %}
+    {% elseif image.ia is defined and image.ia != '' %}
         {% set img_href = 'https://archive.org/details/' ~ image.ia %}
-        {% set img_src = 'https://archive.org/download/' ~ image.ia ~ '/' ~ image.ia_file %}
+        {% if image.ia_leaf is defined %}
+            {% set img_src = 'https://archive.org/download/' ~ image.ia ~ '/page/leaf' ~ image.ia_leaf ~ '_w1000.jpg' %}
+        {% else %}
+            {% set img_src = 'https://archive.org/download/' ~ image.ia ~ '/' ~ image.ia_file %}
+        {% endif %}
 
     {% endif %}
 

@@ -26,7 +26,7 @@
 \listoffigures
 \clearpage
 
-{% set items = database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location', {storage_location: page.id}).fetchAll() %}
+{% set items = database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location ORDER BY CAST(storage_location_key AS INTEGER) ASC', {storage_location: page.id}).fetchAll() %}
 {% for item in items %}
   {% set images = json_decode(item.images) %}
   {% if images.0 is defined and images.0.commons is defined %}
@@ -34,7 +34,11 @@
   {% elseif images.0 is defined and images.0.flickr is defined %}
     {% set image = flickr(images.0.flickr).urls.medium_image %}
   {% elseif images.0 is defined and images.0.ia is defined %}
-    {% set image = 'https://archive.org/download/' ~ images.0.ia ~ '/' ~ images.0.ia_file %}
+    {% if images.0.ia_leaf is defined %}
+      {% set image = 'https://archive.org/download/' ~ images.0.ia ~ '/page/leaf' ~ images.0.ia_leaf ~ '_w1000.jpg' %}
+    {% else %}
+      {% set image = 'https://archive.org/download/' ~ images.0.ia ~ '/' ~ images.0.ia_file %}
+    {% endif %}
   {% else %}
     {% set image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Noun_Project_unknown_icon_762411_cc.svg/480px-Noun_Project_unknown_icon_762411_cc.svg.png' %}
   {% endif %}

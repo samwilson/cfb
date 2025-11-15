@@ -17,7 +17,7 @@
     {% endif %}
 
     <ol>
-        {% for item in database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location ORDER BY storage_location_key ASC', {storage_location: page.id}) %}
+        {% for item in database.query('select * from pages where "/storage-locations/"||storage_location = :storage_location ORDER BY CAST(storage_location_key AS INTEGER) ASC', {storage_location: page.id}) %}
             <li>
                 [{{item.storage_location_key}}]
                 <a href="{{ page.link(item.id) }}.html">{{ item.title }}</a>

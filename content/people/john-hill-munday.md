@@ -9,13 +9,14 @@ images:
     caption: 
 keywords:
   - 
-wikidata: 
+wikidata: Q56477024
 wikitree: Munday-1333
 familysearch: 
 geni: 
 ancestry: 
 myheritage: 
 ---
+
 \biohead{}{}{c.~1900 at the Mendips.\cite{JHMmendips}}
 
 John Hill Munday was born on 6 July 1844 at 4:30 pm\cite{GeorgeHillMundayNotes}
@@ -42,7 +43,7 @@ and was working as a legal clerk for his uncle.\cite{Census1861}
 
 In 1867 Bruges died at only 54 years of age;\cite{BrugesDeath} when John Hill was 23, and he then moved back to live with his parents.
 
-In 1871, John Munday is listed as living with his parents and sister at 32 Middleton Road, Battersea and worked as a solicitor's morning clerk.\cite{JohnHillMunday1871} On 11 August 1876 he left on a long voyage to Natal, South Africa and wrote an extensive letter/diary about the journey---most of it was to do with life on board, and there is no record of what he did in Natal or why he had gone there: he returned by January 1877.
+In 1871, John Munday is listed as living with his parents and sister at 32 Middleton Road, Battersea and worked as a solicitor's morning clerk.{ref JohnHillMunday1871} On 11 August 1876 he left on a long voyage to Natal, South Africa and wrote an extensive letter/diary about the journey---most of it was to do with life on board, and there is no record of what he did in Natal or why he had gone there: he returned by January 1877.
 
 He married \bioref{Catherine_Aldridge} on 8 April 1880 at Benhilton Church, Sutton, Croydon\cite{JHM-CA-marriage-announcement, JHMtree} and they had five children:
 \bioref{Nora_Katie_Munday}, \bioref{Kathleen_Munday}, \bioref{Mildred_Mary_Munday}, \bioref{Ralph_Munday}, and \bioref{Margery_Munday}.

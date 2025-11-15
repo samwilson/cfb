@@ -4,8 +4,12 @@ title:
 images:
   - commons: 
     flickr: 
-    internetarchive: 
-    caption: 
+    ia: 
+    ia_leaf: 
+    ia_file:
+    width: 
+    height: 
+    caption:
 license: 
 date: 
 date_precision: 
@@ -16,4 +20,5 @@ people:
   - 
 tags:
   - 
+description: 
 ---

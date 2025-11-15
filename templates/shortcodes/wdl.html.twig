@@ -1,0 +1,10 @@
+{% apply spaceless %}
+{% set item = get_json( 'https://www.wikidata.org/wiki/Special:EntityData/' ~ shortcode.attrs.1 ~ '.json' ).entities|first %}
+{% set url = 'https://www.wikidata.org/wiki/' ~ item.id %}
+{% for site in [ 'commonswiki', 'enwikisource', 'enwiki' ] %}
+    {% if item.sitelinks[ site] is defined %}
+        {% set url = item.sitelinks[site].url %}
+    {% endif %}
+{% endfor %}
+<a href="{{url}}" data-wikidata="{{ item.id }}">{{ item.labels.en.value }}</a>
+{% endapply %}

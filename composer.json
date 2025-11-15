@@ -22,5 +22,9 @@
         "newitem": [
             "cp _item_template.md content/items/$(( $(ls -1q content/items | wc -l) + 1 )).md"
         ]
+    },
+    "scripts-descriptions": {
+        "deploy": "Build and then deploy the site to Netlify.",
+        "newitem": "Create a new archive item."
     }
 }

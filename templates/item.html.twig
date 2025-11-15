@@ -24,9 +24,9 @@
                     (
                     {# Previous #}
                     {% set prev_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
-                        AND storage_location_key < "'~page.metadata.storage_location_key~'"
-                        AND storage_location_key != "'~page.metadata.storage_location_key~'"
-                        ORDER BY storage_location_key DESC' %}
+                        AND CAST(storage_location_key AS INTEGER) < CAST("'~page.metadata.storage_location_key~'" AS INTEGER)
+                        AND CAST(storage_location_key AS INTEGER) != CAST("'~page.metadata.storage_location_key~'" AS INTEGER)
+                        ORDER BY CAST(storage_location_key AS INTEGER) DESC' %}
                     {% set prev = database.query(prev_sql).fetch %}
                     {% if prev %}
                         <a href="{{ page.link(prev.id) }}.html" title="{{prev.title}}">← Previous</a>
@@ -34,9 +34,9 @@
                     |
                     {# Next #}
                     {% set next_sql = 'SELECT * FROM pages WHERE storage_location = "'~page.metadata.storage_location~'"
-                        AND storage_location_key > "'~page.metadata.storage_location_key~'"
-                        AND storage_location_key != "'~page.metadata.storage_location_key~'"
-                        ORDER BY storage_location_key ASC' %}
+                        AND CAST(storage_location_key AS INTEGER) > CAST("'~page.metadata.storage_location_key~'" AS INTEGER)
+                        AND CAST(storage_location_key AS INTEGER) != CAST("'~page.metadata.storage_location_key~'" AS INTEGER)
+                        ORDER BY CAST(storage_location_key AS INTEGER) ASC' %}
                     {% set next = database.query(next_sql).fetch %}
                     {% if next %}
                         <a href="{{ page.link(next.id) }}.html" title="{{next.title}}">Next →</a>

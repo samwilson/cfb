@@ -34,7 +34,7 @@
 <body class="{{ page.metadata.template }}-template">
     <header>
         <h1>
-            <a class="navbar-brand" href="{{page.link('/index')}}.html">{{site.title}}</a>
+            <a href="{{page.link('/index')}}.html">{{site.title}}</a>
         </h1>
         <form action="https://duckduckgo.com/" method="get" id="search-form">
             <input type="hidden" name="sites" value="{{ site.config.url }}" /><!-- This site only -->
@@ -54,7 +54,9 @@
         </article>
         <aside>
             <p class="logo">
-                <img src="{{ page.link('/CFB_monogram.png') }}" alt="CFB logo" />
+                <a href="{{page.link('/index')}}.html">
+                    <img src="{{ page.link('/CFB_monogram.png') }}" alt="CFB logo" />
+                </a>
             </p>
             <nav>
                 <ul>
