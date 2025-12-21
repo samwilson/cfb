@@ -185,3 +185,7 @@ body.item-template .image img {
     background: linear-gradient(to top, #eee 0%, white 50%);
     color:gray;
 }
+
+.shortcode-align-right {
+    text-align: right;
+}

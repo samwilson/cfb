@@ -10,7 +10,8 @@ images:
     width: 
     height: 
     caption:
-license: 
+license:
+copyright_owner: 
 date: 
 date_precision: 
 pd_year: 

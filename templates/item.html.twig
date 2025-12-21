@@ -120,7 +120,7 @@
             {% elseif page.metadata.license|lower == 'copyright' %}
                 &copy;
                 {{ macros.date(page.metadata.date, 'year') }}
-                {% if page.metadata.author is defined %}{{ page.metadata.author }}{% else %}<em>unknown author</em>{% endif %}.
+                {% if page.metadata.copyright_owner is defined %}{{ page.metadata.copyright_owner }}{% else %}<em>unknown author</em>{% endif %}.
             {% else %}
                 No license has been specified for this work.
                 Please <a href="{{ page.link('/contact') }}.html">contact us</a> for more information about reuse.

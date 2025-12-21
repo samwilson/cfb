@@ -1,6 +1,6 @@
 ---
 template: person
-title:
+title: Richard James Hancox
 description:
 images:
   - commons: 
@@ -24,9 +24,10 @@ wikitree: Hancox-910
 familysearch: 
 geni: 
 ancestry: 
-myheritage: 
+myheritage:
+refernces:
+  - 
 ---
-\biohead{Richard James Hancox}{}{}
 
 Richard James Hancox was born on 23 Aug 1873, at 6 Suburban Road, West Derby, Lancashire \cite{RJHancoxBirth} and was baptised on 14 September 1873 at the Church of the Holy Trinity, Walton-on-the-Hill \cite{RJHancoxBaptism}.  His parents were \bioref{Harry_Hancox} and  \bioref{Maria_Mary_Merrett}. He had three brothers:
 \bioref{Harry_Merrett_Hancox}, \bioref{Frank_Heeley_Hancox} and \bioref{Charles_Edward_Hancox}.

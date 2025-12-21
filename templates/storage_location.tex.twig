@@ -9,7 +9,7 @@
 \renewcommand{\figurename}{}
 \renewcommand{\listfigurename}{Table of Contents}
 
-\title{ H.M. Wilson Archives }
+\title{  Archives }
 \author{ {{ page.metadata.title }} }
 \date{
   {{ database.query('select COUNT(*) from pages where "/storage-locations/"||storage_location = :storage_location', {storage_location: page.id}).fetchColumn }}
